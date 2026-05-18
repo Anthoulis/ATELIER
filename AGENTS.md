@@ -2,7 +2,7 @@
 
 ## Scope
 
-These rules apply to all future Codex work inside `atelier-website`.
+These rules apply to all future Codex work in this repository.
 
 ## Core Rules
 

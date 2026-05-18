@@ -16,14 +16,13 @@ This project uses Vite with vanilla JavaScript modules. It does not use React, W
 ## Project Structure
 
 ```text
-atelier-website/
-  docs/
-  public/
-    content/
-    images/
-  src/
-    components/
-    styles/
+docs/
+public/
+  content/
+  images/
+src/
+  components/
+  styles/
 ```
 
 ## Commands
