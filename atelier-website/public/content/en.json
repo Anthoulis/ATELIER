@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "title": "ATELIER | Premium Burgers, Panini & Drinks",
+    "description": "ATELIER is a premium burger, panini, hot dog, dessert, and drinks concept."
+  },
+  "locales": {
+    "en": "EN",
+    "el": "EL"
+  },
+  "brand": {
+    "name": "ATELIER",
+    "tagline": "Burgers, panini, drinks"
+  },
+  "navigation": [
+    {
+      "label": "Concept",
+      "href": "#concept"
+    },
+    {
+      "label": "Featured",
+      "href": "#featured"
+    },
+    {
+      "label": "Menu",
+      "href": "#menu"
+    },
+    {
+      "label": "Gallery",
+      "href": "#gallery"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Premium casual food",
+    "title": "A focused atelier for burgers, panini, and drinks.",
+    "body": "ATELIER brings together generous comfort food, considered ingredients, and an all-day drinks rhythm in a clean, modern format.",
+    "primaryCta": {
+      "label": "Explore menu",
+      "href": "#menu"
+    },
+    "secondaryCta": {
+      "label": "Find us",
+      "href": "#contact"
+    }
+  },
+  "concept": {
+    "eyebrow": "Concept",
+    "title": "Built around everyday quality.",
+    "body": "The foundation is simple: a tight menu, strong core categories, and a brand system that can grow without becoming noisy.",
+    "points": [
+      {
+        "title": "Food with structure",
+        "body": "Burgers, panini, hot dogs, starters, and desserts are organized as clear categories from day one."
+      },
+      {
+        "title": "Drinks as a full pillar",
+        "body": "Refreshments, water, beers, spirits, and aperitif options are treated as part of the concept, not an afterthought."
+      },
+      {
+        "title": "Content first",
+        "body": "Copy and menu data live outside the HTML so the website can evolve without layout rewrites."
+      }
+    ]
+  },
+  "featured": {
+    "eyebrow": "Featured",
+    "title": "First menu signals.",
+    "body": "These placeholder items define the tone and hierarchy. Final names, descriptions, prices, and photos can replace them later."
+  },
+  "menu": {
+    "eyebrow": "Menu",
+    "title": "Menu foundation.",
+    "body": "Phase 0 defines the category structure and placeholder items only.",
+    "categories": [
+      {
+        "id": "starters",
+        "title": "Starters",
+        "description": "Small plates and first bites.",
+        "items": [
+          {
+            "id": "atelier-fries",
+            "name": "ATELIER Fries",
+            "description": "Crisp fries with house seasoning.",
+            "price": "TBD",
+            "featured": true
+          }
+        ]
+      },
+      {
+        "id": "hot-dogs",
+        "title": "Hot Dogs",
+        "description": "Premium hot dogs with focused toppings.",
+        "items": [
+          {
+            "id": "signature-hot-dog",
+            "name": "Signature Hot Dog",
+            "description": "A clean placeholder for the future house hot dog.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "panini",
+        "title": "Panini",
+        "description": "Pressed sandwiches with generous fillings.",
+        "items": [
+          {
+            "id": "grilled-panini",
+            "name": "Grilled Panini",
+            "description": "Toasted bread, layered filling, and a balanced finish.",
+            "price": "TBD",
+            "featured": true
+          }
+        ]
+      },
+      {
+        "id": "burgers",
+        "title": "Burgers",
+        "description": "The core burger lineup.",
+        "items": [
+          {
+            "id": "atelier-burger",
+            "name": "ATELIER Burger",
+            "description": "The future house burger with premium ingredients.",
+            "price": "TBD",
+            "featured": true
+          }
+        ]
+      },
+      {
+        "id": "desserts",
+        "title": "Desserts",
+        "description": "Sweet finishes for dine-in or takeaway.",
+        "items": [
+          {
+            "id": "daily-dessert",
+            "name": "Daily Dessert",
+            "description": "A rotating sweet option to define later.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "refreshments",
+        "title": "Refreshments",
+        "description": "Soft drinks and non-alcoholic options.",
+        "items": [
+          {
+            "id": "craft-refreshment",
+            "name": "Craft Refreshment",
+            "description": "A placeholder for premium refreshment options.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "water",
+        "title": "Water",
+        "description": "Still and sparkling water.",
+        "items": [
+          {
+            "id": "still-water",
+            "name": "Still Water",
+            "description": "Simple placeholder for bottled water.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "beers",
+        "title": "Beers",
+        "description": "Selected beers for the food menu.",
+        "items": [
+          {
+            "id": "house-beer",
+            "name": "House Beer",
+            "description": "A placeholder for the first beer selection.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "spirits",
+        "title": "Spirits",
+        "description": "Focused spirits list.",
+        "items": [
+          {
+            "id": "selected-spirit",
+            "name": "Selected Spirit",
+            "description": "A placeholder for future spirits.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "aperitif",
+        "title": "Aperitif",
+        "description": "Pre-meal and early evening drinks.",
+        "items": [
+          {
+            "id": "atelier-aperitif",
+            "name": "ATELIER Aperitif",
+            "description": "A placeholder aperitif for the drinks direction.",
+            "price": "TBD"
+          }
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Image system placeholders.",
+    "body": "The folders are ready for logo, food, drinks, and atmosphere assets.",
+    "items": [
+      {
+        "label": "Food detail"
+      },
+      {
+        "label": "Drinks detail"
+      },
+      {
+        "label": "Atmosphere"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Location details will land here.",
+    "body": "Use this section for address, hours, phone, delivery links, and social channels when those decisions are final.",
+    "details": [
+      {
+        "label": "Address",
+        "value": "To be announced"
+      },
+      {
+        "label": "Hours",
+        "value": "To be announced"
+      },
+      {
+        "label": "Contact",
+        "value": "hello@atelier.example"
+      }
+    ]
+  },
+  "footer": {
+    "brandLine": "ATELIER",
+    "note": "Premium burgers, panini, desserts, and drinks."
+  }
+}

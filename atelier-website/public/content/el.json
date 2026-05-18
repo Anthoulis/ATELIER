@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "title": "ATELIER | Premium Burgers, Panini & Ποτά",
+    "description": "Το ATELIER είναι ένα premium concept για burgers, panini, hot dogs, γλυκά και ποτά."
+  },
+  "locales": {
+    "en": "EN",
+    "el": "EL"
+  },
+  "brand": {
+    "name": "ATELIER",
+    "tagline": "Burgers, panini, ποτά"
+  },
+  "navigation": [
+    {
+      "label": "Concept",
+      "href": "#concept"
+    },
+    {
+      "label": "Προτάσεις",
+      "href": "#featured"
+    },
+    {
+      "label": "Μενού",
+      "href": "#menu"
+    },
+    {
+      "label": "Gallery",
+      "href": "#gallery"
+    },
+    {
+      "label": "Επικοινωνία",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Premium casual φαγητό",
+    "title": "Ένα focused atelier για burgers, panini και ποτά.",
+    "body": "Το ATELIER ενώνει comfort food, προσεγμένα υλικά και all-day drinks σε μια καθαρή, σύγχρονη εμπειρία.",
+    "primaryCta": {
+      "label": "Δες το μενού",
+      "href": "#menu"
+    },
+    "secondaryCta": {
+      "label": "Βρες μας",
+      "href": "#contact"
+    }
+  },
+  "concept": {
+    "eyebrow": "Concept",
+    "title": "Χτισμένο γύρω από καθημερινή ποιότητα.",
+    "body": "Η βάση είναι απλή: σύντομο μενού, δυνατές βασικές κατηγορίες και ένα brand σύστημα που μπορεί να μεγαλώσει χωρίς θόρυβο.",
+    "points": [
+      {
+        "title": "Φαγητό με δομή",
+        "body": "Burgers, panini, hot dogs, starters και γλυκά οργανώνονται από την αρχή σε καθαρές κατηγορίες."
+      },
+      {
+        "title": "Τα ποτά ως βασικός πυλώνας",
+        "body": "Refreshments, νερά, μπύρες, spirits και aperitif αντιμετωπίζονται ως μέρος του concept."
+      },
+      {
+        "title": "Content first",
+        "body": "Τα κείμενα και τα δεδομένα του μενού μένουν έξω από το HTML ώστε το website να εξελίσσεται χωρίς layout rewrites."
+      }
+    ]
+  },
+  "featured": {
+    "eyebrow": "Προτάσεις",
+    "title": "Πρώτα σήματα μενού.",
+    "body": "Τα placeholder items ορίζουν τόνο και ιεραρχία. Τελικά ονόματα, περιγραφές, τιμές και φωτογραφίες μπορούν να μπουν αργότερα."
+  },
+  "menu": {
+    "eyebrow": "Μενού",
+    "title": "Βάση μενού.",
+    "body": "Το Phase 0 ορίζει μόνο τη δομή κατηγοριών και placeholder items.",
+    "categories": [
+      {
+        "id": "starters",
+        "title": "Starters",
+        "description": "Μικρά πιάτα και πρώτες μπουκιές.",
+        "items": [
+          {
+            "id": "atelier-fries",
+            "name": "ATELIER Fries",
+            "description": "Τραγανές πατάτες με house seasoning.",
+            "price": "TBD",
+            "featured": true
+          }
+        ]
+      },
+      {
+        "id": "hot-dogs",
+        "title": "Hot Dogs",
+        "description": "Premium hot dogs με focused toppings.",
+        "items": [
+          {
+            "id": "signature-hot-dog",
+            "name": "Signature Hot Dog",
+            "description": "Καθαρό placeholder για το μελλοντικό house hot dog.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "panini",
+        "title": "Panini",
+        "description": "Pressed sandwiches με πλούσιες γεμίσεις.",
+        "items": [
+          {
+            "id": "grilled-panini",
+            "name": "Grilled Panini",
+            "description": "Ψημένο ψωμί, layered γέμιση και ισορροπημένο τελείωμα.",
+            "price": "TBD",
+            "featured": true
+          }
+        ]
+      },
+      {
+        "id": "burgers",
+        "title": "Burgers",
+        "description": "Η βασική burger σειρά.",
+        "items": [
+          {
+            "id": "atelier-burger",
+            "name": "ATELIER Burger",
+            "description": "Το μελλοντικό house burger με premium υλικά.",
+            "price": "TBD",
+            "featured": true
+          }
+        ]
+      },
+      {
+        "id": "desserts",
+        "title": "Desserts",
+        "description": "Γλυκά κλεισίματα για dine-in ή takeaway.",
+        "items": [
+          {
+            "id": "daily-dessert",
+            "name": "Daily Dessert",
+            "description": "Περιστρεφόμενη γλυκιά επιλογή για μελλοντικό ορισμό.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "refreshments",
+        "title": "Refreshments",
+        "description": "Αναψυκτικά και non-alcoholic επιλογές.",
+        "items": [
+          {
+            "id": "craft-refreshment",
+            "name": "Craft Refreshment",
+            "description": "Placeholder για premium refreshments.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "water",
+        "title": "Water",
+        "description": "Still και sparkling νερό.",
+        "items": [
+          {
+            "id": "still-water",
+            "name": "Still Water",
+            "description": "Απλό placeholder για εμφιαλωμένο νερό.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "beers",
+        "title": "Beers",
+        "description": "Επιλεγμένες μπύρες για το food menu.",
+        "items": [
+          {
+            "id": "house-beer",
+            "name": "House Beer",
+            "description": "Placeholder για την πρώτη beer selection.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "spirits",
+        "title": "Spirits",
+        "description": "Focused spirits list.",
+        "items": [
+          {
+            "id": "selected-spirit",
+            "name": "Selected Spirit",
+            "description": "Placeholder για μελλοντικά spirits.",
+            "price": "TBD"
+          }
+        ]
+      },
+      {
+        "id": "aperitif",
+        "title": "Aperitif",
+        "description": "Ποτά πριν το φαγητό ή για νωρίς το βράδυ.",
+        "items": [
+          {
+            "id": "atelier-aperitif",
+            "name": "ATELIER Aperitif",
+            "description": "Placeholder aperitif για τη drinks κατεύθυνση.",
+            "price": "TBD"
+          }
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Placeholders για εικόνες.",
+    "body": "Οι φάκελοι είναι έτοιμοι για logo, food, drinks και atmosphere assets.",
+    "items": [
+      {
+        "label": "Food detail"
+      },
+      {
+        "label": "Drinks detail"
+      },
+      {
+        "label": "Atmosphere"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Επικοινωνία",
+    "title": "Τα στοιχεία τοποθεσίας θα μπουν εδώ.",
+    "body": "Η ενότητα μπορεί να φιλοξενήσει διεύθυνση, ώρες, τηλέφωνο, delivery links και social channels όταν οριστικοποιηθούν.",
+    "details": [
+      {
+        "label": "Διεύθυνση",
+        "value": "Θα ανακοινωθεί"
+      },
+      {
+        "label": "Ώρες",
+        "value": "Θα ανακοινωθεί"
+      },
+      {
+        "label": "Επικοινωνία",
+        "value": "hello@atelier.example"
+      }
+    ]
+  },
+  "footer": {
+    "brandLine": "ATELIER",
+    "note": "Premium burgers, panini, γλυκά και ποτά."
+  }
+}

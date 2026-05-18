@@ -1,0 +1,54 @@
+/*
+  layout.css
+  Page shell, section rhythm, and responsive layout primitives.
+  Shared layout changes have wide blast radius; review every section before editing.
+*/
+
+.site-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page-main {
+  flex: 1;
+}
+
+.page-section {
+  padding-block: var(--section-padding-block);
+}
+
+.section-inner,
+.site-header__inner,
+.site-footer__inner {
+  width: min(100% - 2rem, var(--container-max));
+  margin-inline: auto;
+}
+
+.site-section-heading {
+  display: grid;
+  max-width: 44rem;
+  gap: var(--space-3);
+}
+
+.site-section-heading h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+.site-section-heading p:last-child {
+  color: var(--color-muted);
+}
+
+@media (min-width: 48rem) {
+  .section-inner,
+  .site-header__inner,
+  .site-footer__inner {
+    width: min(100% - 3rem, var(--container-max));
+  }
+
+  .site-section-heading h2 {
+    font-size: var(--text-2xl);
+  }
+}
