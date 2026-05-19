@@ -67,51 +67,99 @@
   },
   "featured": {
     "eyebrow": "Προτάσεις",
-    "title": "Πρώτα σήματα μενού.",
-    "body": "Τα placeholder items ορίζουν τόνο και ιεραρχία. Τελικά ονόματα, περιγραφές, τιμές και φωτογραφίες μπορούν να μπουν αργότερα."
+    "title": "Υπογραφές ATELIER.",
+    "body": "Επιλεγμένες δυνατές προτάσεις από το τελικό μενού του ATELIER."
   },
   "menu": {
     "eyebrow": "Μενού",
-    "title": "Βάση μενού.",
-    "body": "Το Phase 0 ορίζει μόνο τη δομή κατηγοριών και placeholder items.",
+    "title": "Μενού φαγητού και ποτών.",
+    "body": "Κάθε στοιχείο του μενού μας παρασκευάζεται καθημερινά στο κατάστημα, με έμφαση στην ποιότητα και στη λεπτομέρεια.",
     "categories": [
       {
         "id": "starters",
         "title": "Starters",
-        "description": "Μικρά πιάτα και πρώτες μπουκιές.",
+        "description": "Αλμυρές μπουκιές και φρεσκοκομμένες πατάτες.",
         "items": [
           {
-            "id": "atelier-fries",
-            "name": "ATELIER Fries",
-            "description": "Τραγανές πατάτες με house seasoning.",
-            "price": "TBD",
-            "featured": true
+            "id": "savory-loukoumades",
+            "name": "Αλμυροί Λουκουμάδες",
+            "description": "Γεμιστοί με φέτα και μυρωδικά, σερβιρισμένοι με μαρμελάδα ντομάτας.",
+            "price": 5
+          },
+          {
+            "id": "cheese-croquettes",
+            "name": "Κροκέτες Τυριού",
+            "description": "Χρυσαφένιες κροκέτες τυριού, σερβιρισμένες με μαρμελάδα ντομάτας.",
+            "price": 6
+          },
+          {
+            "id": "fresh-cut-fries",
+            "name": "Φρεσκοκομμένες Πατάτες",
+            "description": "",
+            "price": 6
+          },
+          {
+            "id": "fresh-cut-fries-gremolata",
+            "name": "Φρεσκοκομμένες Πατάτες με Gremolata",
+            "description": "",
+            "price": 7
+          },
+          {
+            "id": "croquant-mozzarella-stick",
+            "name": "Croquant Stick Μοτσαρέλας",
+            "description": "Τραγανό stick μοτσαρέλας, γλασαρισμένο με αρωματικό πικάντικο μέλι.",
+            "price": 6.5
           }
         ]
       },
       {
         "id": "hot-dogs",
         "title": "Hot Dogs",
-        "description": "Premium hot dogs με focused toppings.",
+        "description": "Hot dogs με λουκάνικο και focused toppings.",
         "items": [
           {
-            "id": "signature-hot-dog",
-            "name": "Signature Hot Dog",
-            "description": "Καθαρό placeholder για το μελλοντικό house hot dog.",
-            "price": "TBD"
+            "id": "classic-pickle-hot-dog",
+            "name": "Hot Dog Κλασικό με Πίκλες",
+            "description": "Λουκάνικο, πίκλες, κέτσαπ, μαγιονέζα.",
+            "price": 5.5
+          },
+          {
+            "id": "caramelized-onion-pecorino-hot-dog",
+            "name": "Hot Dog Καραμελωμένο Κρεμμύδι & Πεκορίνο",
+            "description": "Λουκάνικο, καραμελωμένο κρεμμύδι, τυρί πεκορίνο, κέτσαπ, μουστάρδα.",
+            "price": 6
           }
         ]
       },
       {
         "id": "panini",
         "title": "Panini",
-        "description": "Pressed sandwiches με πλούσιες γεμίσεις.",
+        "description": "Panini με προσεγμένες γεμίσεις και house-made στοιχεία.",
         "items": [
           {
-            "id": "grilled-panini",
-            "name": "Grilled Panini",
-            "description": "Ψημένο ψωμί, layered γέμιση και ισορροπημένο τελείωμα.",
-            "price": "TBD",
+            "id": "panini-pancetta-street-style",
+            "name": "Panini Πανσέτα Street Style",
+            "description": "Πανσέτα, coleslaw, φρεσκοκομμένες πατάτες, μαγιονέζα, σος BBQ.",
+            "price": 9
+          },
+          {
+            "id": "croquant-chicken-panini",
+            "name": "Panini Croquant Κοτόπουλο",
+            "description": "Τραγανό κοτόπουλο panko, cheddar, coleslaw, πίκλες, σος ATELIER.",
+            "price": 10,
+            "featured": true
+          },
+          {
+            "id": "truffle-beef-panini",
+            "name": "Panini Μοσχαριού με Άρωμα Τρούφας",
+            "description": "Διπλό smash μοσχάρι Black Angus, cheddar, καραμελωμένα κρεμμύδια, φρεσκοκομμένες πατάτες, μαγιονέζα τρούφας.",
+            "price": 11
+          },
+          {
+            "id": "beef-fillet-panini-a-l-atelier",
+            "name": "Panini Φιλέτο Μοσχαριού à l’Atelier",
+            "description": "Ταλιάτα μοσχαρίσιου φιλέτου, πικάντικη γραβιέρα, σοτέ κρεμμύδι, σάλτσα πιπεριού, ρόκα.",
+            "price": 13,
             "featured": true
           }
         ]
@@ -119,13 +167,49 @@
       {
         "id": "burgers",
         "title": "Burgers",
-        "description": "Η βασική burger σειρά.",
+        "description": "100% μοσχαρίσιο Black Angus και επιλογή με ψητό χαλούμι.",
         "items": [
           {
+            "id": "forest-halloumi",
+            "name": "Forest Halloumi",
+            "description": "Ψητό χαλούμι, σοτέ μανιτάρια, καραμελωμένο κρεμμύδι, ρόκα, σάλτσα aioli.",
+            "price": 10
+          },
+          {
+            "id": "croquant-chicken",
+            "name": "Croquant Κοτόπουλο",
+            "description": "Τραγανό κοτόπουλο panko, cheddar, ντομάτα, iceberg, σος ATELIER.",
+            "price": 10
+          },
+          {
+            "id": "spicy-croquant-chicken",
+            "name": "Πικάντικο Croquant Κοτόπουλο",
+            "description": "Τραγανό κοτόπουλο panko, cheddar, coleslaw, πικάντικη σος.",
+            "price": 10.5
+          },
+          {
+            "id": "caramelized-onion-puree",
+            "name": "Πουρέ Καραμελωμένου Κρεμμυδιού",
+            "description": "Διπλό smash μοσχάρι, μαγιονέζα, bacon, κρέμα καραμελωμένου κρεμμυδιού.",
+            "price": 10.5
+          },
+          {
+            "id": "julienne-potato",
+            "name": "Πατάτα Julienne",
+            "description": "Διπλό smash μοσχάρι, cheddar, αυγό, πατάτα julienne, σος ATELIER.",
+            "price": 12
+          },
+          {
+            "id": "sweet-utopia",
+            "name": "Γλυκιά Ουτοπία",
+            "description": "Διπλό smash μοσχάρι, cheddar, bacon, καραμελωμένο κρεμμύδι, BBQ, πίκλες, μαρούλι, μαρμελάδα ντομάτας, μουστάρδα.",
+            "price": 12.5
+          },
+          {
             "id": "atelier-burger",
-            "name": "ATELIER Burger",
-            "description": "Το μελλοντικό house burger με premium υλικά.",
-            "price": "TBD",
+            "name": "Atelier",
+            "description": "Διπλό smash μοσχάρι, καραμελωμένο κρεμμύδι, γραβιέρα τρούφας, ρόκα, μαρμελάδα σύκου.",
+            "price": 13.5,
             "featured": true
           }
         ]
@@ -133,78 +217,198 @@
       {
         "id": "desserts",
         "title": "Desserts",
-        "description": "Γλυκά κλεισίματα για dine-in ή takeaway.",
+        "description": "Ζεστοί λουκουμάδες και ελληνικά dessert classics.",
         "items": [
           {
-            "id": "daily-dessert",
-            "name": "Daily Dessert",
-            "description": "Περιστρεφόμενη γλυκιά επιλογή για μελλοντικό ορισμό.",
-            "price": "TBD"
+            "id": "warm-loukoumades-honey-walnut-cinnamon",
+            "name": "Ζεστοί Λουκουμάδες με Μέλι, Καρύδι & Κανέλα",
+            "description": "",
+            "price": 5.5
+          },
+          {
+            "id": "warm-loukoumades-praline-cream",
+            "name": "Ζεστοί Λουκουμάδες με Κρέμα Πραλίνας",
+            "description": "",
+            "price": 6
+          },
+          {
+            "id": "ekmek-kataifi",
+            "name": "Εκμέκ Κανταΐφι",
+            "description": "",
+            "price": 6.5
+          },
+          {
+            "id": "caramelized-galaktoboureko-rosette",
+            "name": "Καραμελωμένη Ροζέτα Γαλακτομπούρεκου",
+            "description": "",
+            "price": 7
           }
         ]
       },
       {
         "id": "refreshments",
         "title": "Refreshments",
-        "description": "Αναψυκτικά και non-alcoholic επιλογές.",
+        "description": "Αναψυκτικά, soda, tonic και iced tea.",
         "items": [
           {
-            "id": "craft-refreshment",
-            "name": "Craft Refreshment",
-            "description": "Placeholder για premium refreshments.",
-            "price": "TBD"
+            "id": "coca-cola",
+            "name": "Coca-Cola",
+            "description": "",
+            "price": 3
+          },
+          {
+            "id": "coca-cola-zero",
+            "name": "Coca-Cola Zero",
+            "description": "",
+            "price": 3
+          },
+          {
+            "id": "fanta-lemon",
+            "name": "Fanta Lemon",
+            "description": "",
+            "price": 3
+          },
+          {
+            "id": "sprite",
+            "name": "Sprite",
+            "description": "",
+            "price": 3
+          },
+          {
+            "id": "fanta-orange",
+            "name": "Fanta Orange",
+            "description": "",
+            "price": 3
+          },
+          {
+            "id": "iced-tea",
+            "name": "Iced Tea",
+            "description": "",
+            "price": 3
+          },
+          {
+            "id": "pink-grapefruit-soda",
+            "name": "Pink Grapefruit Soda",
+            "description": "",
+            "price": 3
+          },
+          {
+            "id": "soda-water",
+            "name": "Soda Water",
+            "description": "",
+            "price": 3
+          },
+          {
+            "id": "tonic-water",
+            "name": "Tonic Water",
+            "description": "",
+            "price": 3
           }
         ]
       },
       {
         "id": "water",
         "title": "Water",
-        "description": "Still και sparkling νερό.",
+        "description": "Still και sparkling mineral water.",
         "items": [
           {
             "id": "still-water",
             "name": "Still Water",
-            "description": "Απλό placeholder για εμφιαλωμένο νερό.",
-            "price": "TBD"
+            "description": "",
+            "price": 0.5
+          },
+          {
+            "id": "sparkling-mineral-water",
+            "name": "Sparkling Mineral Water",
+            "description": "",
+            "price": 1
           }
         ]
       },
       {
         "id": "beers",
         "title": "Beers",
-        "description": "Επιλεγμένες μπύρες για το food menu.",
+        "description": "Επιλεγμένες μπύρες σε lager, draught και bottle επιλογές.",
         "items": [
           {
-            "id": "house-beer",
-            "name": "House Beer",
-            "description": "Placeholder για την πρώτη beer selection.",
-            "price": "TBD"
+            "id": "alfa-lager",
+            "name": "Alfa Lager",
+            "description": "",
+            "price": 4
+          },
+          {
+            "id": "stella-artois",
+            "name": "Stella Artois",
+            "description": "",
+            "price": 5
+          },
+          {
+            "id": "guinness-draught",
+            "name": "Guinness Draught",
+            "description": "",
+            "price": 7
+          },
+          {
+            "id": "corona-extra",
+            "name": "Corona Extra",
+            "description": "",
+            "price": 6
+          },
+          {
+            "id": "john-smiths-extra-smooth",
+            "name": "John Smith’s Extra Smooth",
+            "description": "",
+            "price": 6
           }
         ]
       },
       {
         "id": "spirits",
         "title": "Spirits",
-        "description": "Focused spirits list.",
+        "description": "Vodka, gin, rum και spritz serves.",
         "items": [
           {
-            "id": "selected-spirit",
-            "name": "Selected Spirit",
-            "description": "Placeholder για μελλοντικά spirits.",
-            "price": "TBD"
+            "id": "absolut-vodka",
+            "name": "Absolut Vodka",
+            "description": "",
+            "price": 6
+          },
+          {
+            "id": "tanqueray-london-dry-gin",
+            "name": "Tanqueray London Dry Gin",
+            "description": "",
+            "price": 6
+          },
+          {
+            "id": "campari-spritz",
+            "name": "Campari Spritz",
+            "description": "",
+            "price": 8
+          },
+          {
+            "id": "bacardi-rum",
+            "name": "Bacardi Rum",
+            "description": "",
+            "price": 6
+          },
+          {
+            "id": "havana-club-rum",
+            "name": "Havana Club Rum",
+            "description": "",
+            "price": 6
           }
         ]
       },
       {
         "id": "aperitif",
         "title": "Aperitif",
-        "description": "Ποτά πριν το φαγητό ή για νωρίς το βράδυ.",
+        "description": "Aperitif επιλογές για την αρχή του γεύματος.",
         "items": [
           {
-            "id": "atelier-aperitif",
-            "name": "ATELIER Aperitif",
-            "description": "Placeholder aperitif για τη drinks κατεύθυνση.",
-            "price": "TBD"
+            "id": "aperol-spritz",
+            "name": "Aperol Spritz",
+            "description": "",
+            "price": 8
           }
         ]
       }
