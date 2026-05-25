@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="112" viewBox="0 0 360 112" role="img" aria-labelledby="title desc">
+  <title id="title">ATELIER</title>
+  <desc id="desc">ATELIER restaurant wordmark</desc>
+  <rect width="360" height="112" fill="none"/>
+  <text x="0" y="56" fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700">ATELIER</text>
+  <path d="M2 76H358" stroke="currentColor" stroke-width="2"/>
+  <text x="0" y="100" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">BURGERS PANINI DRINKS</text>
+</svg>

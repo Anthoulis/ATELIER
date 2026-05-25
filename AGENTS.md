@@ -8,39 +8,35 @@ These rules apply to all future Codex work in this repository.
 
 - Do not make broad unrelated changes.
 - Do not rewrite the whole project unless explicitly asked.
-- Preserve the current file organization unless there is a documented reason to change it.
-- Keep content separate from layout and rendering logic.
+- Preserve the current static file organization unless there is a documented reason to change it.
+- Keep the site focused on premium visual presentation rather than app architecture.
 - Prefer small, focused commits.
-- Preserve the vanilla JavaScript and Vite setup.
-- Do not introduce React, WordPress, or a heavy framework without explicit approval.
+- Preserve the plain static HTML/CSS/JS setup.
+- Do not introduce Vite, npm build tooling, React, WordPress, or a heavy framework without explicit approval.
 
 ## Architecture
 
-- `index.html` should remain minimal and load `src/main.js`.
-- Page sections should be rendered by small modules in `src/components`.
-- Shared content should live in `public/content/en.json` and `public/content/el.json`.
-- Menu shaping and menu-specific rules belong in `src/menu.js`.
-- Locale loading and language persistence belong in `src/i18n.js`.
+- `index.html` is the source of truth for public-facing page structure and content.
+- Use semantic HTML sections and keep the document easy to review.
+- `assets/css/style.css` is the single stylesheet for now.
+- `assets/js/main.js` should contain only minimal UI interactions.
+- Do not reintroduce JavaScript component rendering or JSON-rendered content without explicit approval.
+- Keep imagery organized under `assets/images/logo`, `assets/images/food`, `assets/images/drinks`, and `assets/images/atmosphere`.
 
 ## CSS Rules
 
-- Maintain the existing CSS split:
-  - `tokens.css` for design variables only.
-  - `base.css` for reset and global element defaults.
-  - `layout.css` for page and section layout.
-  - `components.css` for section, card, button, header, and footer styling.
-  - `utilities.css` for small single-purpose helpers.
-- Explain blast radius before touching shared CSS.
+- Use `assets/css/style.css` as the single CSS file until a split is explicitly justified.
+- Explain blast radius before broad shared CSS changes.
 - Keep CSS mobile-first.
-- Keep selectors scoped to clear project classes such as `site-header`, `hero-section`, `menu-section`, and `menu-card`.
-- Avoid broad global selectors outside `base.css`.
+- Keep selectors scoped to clear project classes such as `site-header`, `hero-section`, `menu-section`, and `signature-card`.
+- Keep broad global selectors limited to the reset and element-default section at the top of `assets/css/style.css`.
 
 ## Content Rules
 
-- Do not hard-code replaceable business content in components.
-- Update both `en.json` and `el.json` when adding or changing public content.
-- Keep JSON structures aligned across locales.
-- Treat menu categories as content unless behavior requires logic in `src/menu.js`.
+- Public content is static in `index.html`.
+- Do not invent real address, hours, phone, reservation, or social details.
+- Treat menu categories as content unless behavior explicitly requires JavaScript.
+- Keep copy aligned with the ATELIER direction: premium, clean, elegant, food-focused, and modern.
 
 ## Change Process
 

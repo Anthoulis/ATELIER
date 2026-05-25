@@ -1,5 +1,4 @@
 node_modules/
-dist/
-.vite/
-.codex-tools/
 *.log
+.DS_Store
+Thumbs.db
