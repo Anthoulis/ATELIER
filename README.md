@@ -2,21 +2,16 @@
 
 Premium static website for ATELIER, a burger, panini, dessert, and drinks concept.
 
-The repository is intentionally plain static HTML, CSS, and JavaScript. It does not use Vite, npm, React, WordPress, JSON-rendered content, or a page-builder framework.
-
-## Goals
-
-- Keep the website premium, clean, elegant, and food-focused.
-- Use semantic static HTML as the source of truth.
-- Keep all styling in one main CSS file for now.
-- Use minimal JavaScript only for simple UI behavior.
-- Keep imagery organized by logo, food, drinks, and atmosphere.
+The repository is intentionally plain static HTML, CSS, and JavaScript. It does not use Vite, npm, React, WordPress, bundlers, frameworks, or a build step.
 
 ## Project Structure
 
 ```text
 index.html
 assets/
+  content/
+    menu.en.json
+    menu.el.json
   css/
     style.css
   js/
@@ -32,11 +27,39 @@ docs/
 
 ## Local Preview
 
-No install or build step is required. Open `index.html` directly in a browser, or serve the folder with any static file server.
+Use a local static server so the browser can fetch the JSON menu files.
+
+```bash
+python -m http.server 8080
+```
+
+Then open:
+
+```text
+http://localhost:8080/
+```
+
+Any equivalent static server is fine. Opening `index.html` directly may load the page shell, but browser security rules can block `assets/content/*.json` fetches.
 
 ## Content
 
-Public-facing content now lives directly in `index.html`. Keep copy edits deliberate and aligned with the premium ATELIER direction.
+Most page structure and marketing copy lives in `index.html`.
+
+The menu lives in:
+
+- `assets/content/menu.en.json`
+- `assets/content/menu.el.json`
+
+`assets/js/main.js` loads the matching menu file based on the selected language. If Greek menu content cannot be loaded, the script falls back to English. If a translation key is missing, the English text remains the fallback.
+
+## Editing Menu Safely
+
+- Keep category and item `id` values stable.
+- Keep both locale files aligned by category and item IDs.
+- Do not invent products, prices, address details, hours, phone numbers, or social links.
+- Use concise descriptions that match the premium ATELIER tone.
+- Use `tags` only when useful, for example `signature`, `vegetarian`, or `spicy`.
+- Keep prices as numbers and leave currency display to the renderer.
 
 ## Styling
 
@@ -44,7 +67,7 @@ Primary styling lives in:
 
 - `assets/css/style.css`
 
-Keep the stylesheet mobile-first, scoped to project classes, and focused on presentation rather than framework patterns.
+Keep CSS mobile-first, scoped to project classes, and focused on the current premium restaurant direction.
 
 ## JavaScript
 
@@ -52,4 +75,8 @@ Primary behavior lives in:
 
 - `assets/js/main.js`
 
-Keep JavaScript limited to simple interface interactions such as the mobile navigation state and header scroll state.
+JavaScript is limited to mobile navigation, header scroll state, EN/EL language selection, localStorage persistence, and menu rendering.
+
+## Deployment
+
+Deploy the repository as static files on any static host. No build command is required. Make sure the host serves `.json`, `.css`, `.js`, `.svg`, and image files with normal static file access.

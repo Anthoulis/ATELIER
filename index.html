@@ -1,20 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="ATELIER is a premium burger, panini, dessert, and drinks concept built around considered ingredients and modern casual service."
+    content="ATELIER is a premium casual restaurant concept for composed burgers, pressed panini, desserts, and all-day drinks."
   >
-  <meta property="og:title" content="ATELIER | Premium Burgers, Panini & Drinks">
+  <meta property="og:title" content="ATELIER | Premium Burger, Panini & Drinks Restaurant">
   <meta
     property="og:description"
-    content="A clean, modern restaurant concept for burgers, panini, desserts, and drinks."
+    content="A clean, modern restaurant concept shaped around burgers, panini, desserts, and drinks."
   >
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/food/atelier-burger-hero.png">
-  <title>ATELIER | Premium Burgers, Panini & Drinks</title>
+  <meta property="og:image:alt" content="ATELIER burger served with fries on a dark stone counter.">
+  <title>ATELIER | Premium Burger, Panini & Drinks Restaurant</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/js/main.js"></script>
 </head>
@@ -33,6 +34,33 @@
         >
       </a>
 
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+        <a href="#concept" data-i18n="nav.concept">Concept</a>
+        <a href="#signatures" data-i18n="nav.signatures">Signatures</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="language-toggle" aria-label="Language selection">
+        <button
+          class="language-toggle__button"
+          type="button"
+          aria-pressed="true"
+          data-language-button="en"
+        >
+          EN
+        </button>
+        <button
+          class="language-toggle__button"
+          type="button"
+          aria-pressed="false"
+          data-language-button="el"
+        >
+          EL
+        </button>
+      </div>
+
       <button
         class="nav-toggle"
         type="button"
@@ -45,14 +73,6 @@
         <span class="nav-toggle__line"></span>
         <span class="nav-toggle__line"></span>
       </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
-        <a href="#concept">Concept</a>
-        <a href="#signatures">Signatures</a>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </div>
   </header>
 
@@ -68,15 +88,15 @@
       >
       <div class="hero-section__overlay"></div>
       <div class="hero-section__content">
-        <p class="section-kicker">Premium casual food</p>
+        <p class="section-kicker" data-i18n="hero.kicker">Premium casual food</p>
         <h1 id="hero-title">ATELIER</h1>
-        <p class="hero-section__lede">
+        <p class="hero-section__lede" data-i18n="hero.lede">
           Burgers, panini, desserts, and drinks shaped with the precision of a
           workshop and the ease of modern all-day dining.
         </p>
         <div class="hero-section__actions" aria-label="Primary actions">
-          <a class="button button--primary" href="#menu">View menu</a>
-          <a class="button button--secondary" href="#contact">Opening details</a>
+          <a class="button button--primary" href="#menu" data-i18n="hero.primaryCta">View menu</a>
+          <a class="button button--secondary" href="#contact" data-i18n="hero.secondaryCta">Opening details</a>
         </div>
       </div>
     </section>
@@ -84,16 +104,16 @@
     <section class="concept-section page-section" id="concept" aria-labelledby="concept-title">
       <div class="section-inner concept-section__grid">
         <div class="section-heading">
-          <p class="section-kicker">Concept</p>
-          <h2 id="concept-title">A focused restaurant idea, built around quality.</h2>
+          <p class="section-kicker" data-i18n="concept.kicker">Concept</p>
+          <h2 id="concept-title" data-i18n="concept.title">A focused restaurant idea, built around quality.</h2>
         </div>
         <div class="concept-section__copy">
-          <p>
+          <p data-i18n="concept.bodyOne">
             ATELIER keeps the format tight: composed burgers, pressed panini,
             crisp starters, warm desserts, and a drinks list that belongs to the
             experience rather than sitting beside it.
           </p>
-          <p>
+          <p data-i18n="concept.bodyTwo">
             The visual direction is clean and food-led. Dark stone, warm light,
             disciplined typography, and generous photography support a premium
             casual brand without making the site feel like software.
@@ -105,9 +125,9 @@
     <section class="signatures-section page-section" id="signatures" aria-labelledby="signatures-title">
       <div class="section-inner">
         <div class="section-heading section-heading--center">
-          <p class="section-kicker">Signatures</p>
-          <h2 id="signatures-title">Built for appetite and repeat visits.</h2>
-          <p>
+          <p class="section-kicker" data-i18n="signatures.kicker">Signatures</p>
+          <h2 id="signatures-title" data-i18n="signatures.title">Built for appetite and repeat visits.</h2>
+          <p data-i18n="signatures.body">
             A compact selection of ATELIER anchors, shown with enough restraint
             for a premium restaurant site and enough detail to make the food real.
           </p>
@@ -123,9 +143,9 @@
               loading="lazy"
             >
             <div class="signature-card__body">
-              <p class="section-kicker">Burger</p>
-              <h3>ATELIER Burger</h3>
-              <p>Double smashed beef, caramelized onions, truffle graviera, rocket, and fig jam.</p>
+              <p class="section-kicker" data-i18n="signatureCards.burger.kicker">Burger</p>
+              <h3 data-i18n="signatureCards.burger.title">ATELIER Burger</h3>
+              <p data-i18n="signatureCards.burger.body">Double smashed beef, caramelized onions, truffle graviera, rocket, and fig jam.</p>
             </div>
           </article>
 
@@ -138,9 +158,9 @@
               loading="lazy"
             >
             <div class="signature-card__body">
-              <p class="section-kicker">Panini</p>
-              <h3>Croquant Chicken</h3>
-              <p>Crispy panko chicken, cheddar, coleslaw, pickles, and ATELIER sauce.</p>
+              <p class="section-kicker" data-i18n="signatureCards.panini.kicker">Panini</p>
+              <h3 data-i18n="signatureCards.panini.title">Croquant Chicken</h3>
+              <p data-i18n="signatureCards.panini.body">Crispy panko chicken, cheddar, coleslaw, pickles, and ATELIER sauce.</p>
             </div>
           </article>
 
@@ -153,9 +173,9 @@
               loading="lazy"
             >
             <div class="signature-card__body">
-              <p class="section-kicker">Drinks</p>
-              <h3>Spritz Service</h3>
-              <p>Aperol, Campari, beers, spirits, and clean soft drinks for all-day service.</p>
+              <p class="section-kicker" data-i18n="signatureCards.drinks.kicker">Drinks</p>
+              <h3 data-i18n="signatureCards.drinks.title">Spritz Service</h3>
+              <p data-i18n="signatureCards.drinks.body">Aperol, Campari, beers, spirits, and clean soft drinks for all-day service.</p>
             </div>
           </article>
         </div>
@@ -165,144 +185,29 @@
     <section class="menu-section page-section" id="menu" aria-labelledby="menu-title">
       <div class="section-inner">
         <div class="section-heading">
-          <p class="section-kicker">Menu</p>
-          <h2 id="menu-title">Food and drinks with a clear point of view.</h2>
-          <p>
-            The menu is presented as a polished static selection. It can expand
-            later without bringing back a JavaScript rendering layer.
+          <p class="section-kicker" data-i18n="menu.kicker">Menu</p>
+          <h2 id="menu-title" data-i18n="menu.title">Food and drinks with a clear point of view.</h2>
+          <p data-i18n="menu.body">
+            The menu is structured for easy updates while keeping the website
+            lightweight, static, and focused on the food.
           </p>
         </div>
 
-        <div class="menu-layout">
-          <section class="menu-group" aria-labelledby="starters-title">
-            <div class="menu-group__heading">
-              <h3 id="starters-title">Starters</h3>
-              <p>Savory starts and fresh-cut sides.</p>
-            </div>
-            <div class="menu-list">
-              <article class="menu-item">
-                <div>
-                  <h4>Savory Loukoumades</h4>
-                  <p>Filled with feta and herbs, served with tomato jam.</p>
-                </div>
-                <span>EUR 5</span>
-              </article>
-              <article class="menu-item">
-                <div>
-                  <h4>Croquant Mozzarella Stick</h4>
-                  <p>Crispy mozzarella glazed with aromatic spicy honey.</p>
-                </div>
-                <span>EUR 6.5</span>
-              </article>
-              <article class="menu-item">
-                <div>
-                  <h4>Fresh-Cut Fries</h4>
-                  <p>Served plain or with gremolata.</p>
-                </div>
-                <span>EUR 6</span>
-              </article>
-            </div>
-          </section>
-
-          <section class="menu-group" aria-labelledby="burgers-title">
-            <div class="menu-group__heading">
-              <h3 id="burgers-title">Burgers</h3>
-              <p>Black Angus beef and one composed vegetarian option.</p>
-            </div>
-            <div class="menu-list">
-              <article class="menu-item">
-                <div>
-                  <h4>ATELIER Burger</h4>
-                  <p>Double smashed beef, caramelized onions, truffle graviera, rocket, fig jam.</p>
-                </div>
-                <span>EUR 13.5</span>
-              </article>
-              <article class="menu-item">
-                <div>
-                  <h4>Sweet Utopia</h4>
-                  <p>Double smashed beef, cheddar, bacon, BBQ sauce, pickles, lettuce, tomato jam.</p>
-                </div>
-                <span>EUR 12.5</span>
-              </article>
-              <article class="menu-item">
-                <div>
-                  <h4>Forest Halloumi</h4>
-                  <p>Grilled halloumi, sauteed mushrooms, caramelized onions, rocket, aioli.</p>
-                </div>
-                <span>EUR 10</span>
-              </article>
-            </div>
-          </section>
-
-          <section class="menu-group" aria-labelledby="panini-title">
-            <div class="menu-group__heading">
-              <h3 id="panini-title">Panini</h3>
-              <p>Pressed sandwiches with generous house-built fillings.</p>
-            </div>
-            <div class="menu-list">
-              <article class="menu-item">
-                <div>
-                  <h4>Croquant Chicken Panini</h4>
-                  <p>Crispy panko chicken, cheddar, coleslaw, pickles, ATELIER sauce.</p>
-                </div>
-                <span>EUR 10</span>
-              </article>
-              <article class="menu-item">
-                <div>
-                  <h4>Truffle Beef Panini</h4>
-                  <p>Double smashed beef, cheddar, caramelized onions, fries, truffle mayonnaise.</p>
-                </div>
-                <span>EUR 11</span>
-              </article>
-              <article class="menu-item">
-                <div>
-                  <h4>Beef Fillet Panini a l'Atelier</h4>
-                  <p>Tagliata-style beef fillet, spicy graviera, sauteed onion, pepper sauce, rocket.</p>
-                </div>
-                <span>EUR 13</span>
-              </article>
-            </div>
-          </section>
-
-          <section class="menu-group" aria-labelledby="drinks-title">
-            <div class="menu-group__heading">
-              <h3 id="drinks-title">Drinks and desserts</h3>
-              <p>All-day drinks with warm Greek dessert references.</p>
-            </div>
-            <div class="menu-list">
-              <article class="menu-item">
-                <div>
-                  <h4>Aperol Spritz</h4>
-                  <p>Bright, bitter, and built for aperitif service.</p>
-                </div>
-                <span>EUR 8</span>
-              </article>
-              <article class="menu-item">
-                <div>
-                  <h4>Warm Loukoumades</h4>
-                  <p>Honey, walnut, and cinnamon or praline cream.</p>
-                </div>
-                <span>EUR 5.5</span>
-              </article>
-              <article class="menu-item">
-                <div>
-                  <h4>Galaktoboureko Rosette</h4>
-                  <p>Caramelized Greek custard pastry served warm.</p>
-                </div>
-                <span>EUR 7</span>
-              </article>
-            </div>
-          </section>
+        <div class="menu-layout" id="menu-root" data-menu-root aria-live="polite">
+          <p class="menu-status" data-i18n="menu.loading">Loading menu...</p>
         </div>
+        <noscript>
+          <p class="menu-status">Enable JavaScript to view the structured menu.</p>
+        </noscript>
       </div>
     </section>
 
     <section class="gallery-section page-section" id="gallery" aria-labelledby="gallery-title">
       <div class="section-inner">
         <div class="section-heading section-heading--center">
-          <p class="section-kicker">Visual language</p>
-          <h2 id="gallery-title">Food first, atmosphere close behind.</h2>
-          <p>
+          <p class="section-kicker" data-i18n="gallery.kicker">Visual language</p>
+          <h2 id="gallery-title" data-i18n="gallery.title">Food first, atmosphere close behind.</h2>
+          <p data-i18n="gallery.body">
             The photography system favors texture, contrast, and service mood
             over decorative UI.
           </p>
@@ -317,7 +222,7 @@
               alt="Warm modern ATELIER restaurant counter prepared for evening service."
               loading="lazy"
             >
-            <figcaption>Warm counter service</figcaption>
+            <figcaption data-i18n="gallery.counterCaption">Warm counter service</figcaption>
           </figure>
           <figure class="gallery-item">
             <img
@@ -327,7 +232,7 @@
               alt="Pressed panini with golden bread, crispy chicken, cheddar, and fries."
               loading="lazy"
             >
-            <figcaption>Pressed panini</figcaption>
+            <figcaption data-i18n="gallery.paniniCaption">Pressed panini</figcaption>
           </figure>
           <figure class="gallery-item">
             <img
@@ -337,7 +242,7 @@
               alt="Two spritz drinks served on a dark bar with citrus garnish."
               loading="lazy"
             >
-            <figcaption>Drinks rhythm</figcaption>
+            <figcaption data-i18n="gallery.drinksCaption">Drinks rhythm</figcaption>
           </figure>
         </div>
       </div>
@@ -346,27 +251,31 @@
     <section class="contact-section page-section" id="contact" aria-labelledby="contact-title">
       <div class="section-inner contact-section__grid">
         <div class="section-heading">
-          <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">Opening details are being finalized.</h2>
-          <p>
-            Use this section for the real address, hours, reservations, delivery
-            links, and social channels when those decisions are final.
+          <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+          <h2 id="contact-title" data-i18n="contact.title">Opening details are being finalized.</h2>
+          <p data-i18n="contact.body">
+            The public service details will be added here when the location,
+            reservations, and social channels are confirmed.
           </p>
         </div>
 
         <div class="contact-panel" aria-label="Current service details">
           <dl>
             <div>
-              <dt>Location</dt>
-              <dd>To be announced</dd>
+              <dt data-i18n="contact.locationLabel">Location</dt>
+              <dd data-i18n="contact.toBeAnnounced">To be announced</dd>
             </div>
             <div>
-              <dt>Hours</dt>
-              <dd>To be announced</dd>
+              <dt data-i18n="contact.hoursLabel">Hours</dt>
+              <dd data-i18n="contact.toBeAnnounced">To be announced</dd>
             </div>
             <div>
-              <dt>Service</dt>
-              <dd>Burgers, panini, desserts, drinks</dd>
+              <dt data-i18n="contact.reservationsLabel">Reservations</dt>
+              <dd data-i18n="contact.comingSoon">Coming soon</dd>
+            </div>
+            <div>
+              <dt data-i18n="contact.socialLabel">Social</dt>
+              <dd data-i18n="contact.comingSoon">Coming soon</dd>
             </div>
           </dl>
         </div>
@@ -377,7 +286,7 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p>ATELIER</p>
-      <p>Premium burgers, panini, desserts, and drinks.</p>
+      <p data-i18n="footer.note">Premium burgers, panini, desserts, and drinks.</p>
     </div>
   </footer>
 </body>

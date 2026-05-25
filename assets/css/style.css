@@ -144,9 +144,9 @@ body.nav-open .site-header {
 .site-header__inner {
   display: grid;
   min-height: 76px;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto auto;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
 }
 
 .brand-link {
@@ -212,6 +212,36 @@ body.nav-open .site-nav {
 
 .site-nav a:last-child {
   border-bottom: 0;
+}
+
+.language-toggle {
+  display: inline-flex;
+  gap: 3px;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-sm);
+  padding: 3px;
+}
+
+.language-toggle__button {
+  min-width: 36px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.language-toggle__button[aria-pressed="true"] {
+  background: var(--color-white);
+  color: var(--color-ink);
+}
+
+.site-header.is-scrolled .language-toggle__button[aria-pressed="true"],
+body.nav-open .language-toggle__button[aria-pressed="true"] {
+  background: var(--color-ink);
+  color: var(--color-white);
 }
 
 .hero-section {
@@ -459,10 +489,38 @@ body.nav-open .site-nav {
   font-size: 14px;
 }
 
-.menu-item span {
+.menu-item__price {
   color: #f0c77b;
   font-weight: 800;
   white-space: nowrap;
+}
+
+.menu-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.menu-tag {
+  border: 1px solid rgb(255 255 255 / 0.22);
+  border-radius: 999px;
+  color: #f0c77b;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menu-item__note,
+.menu-status {
+  color: rgb(255 255 255 / 0.68);
+  font-size: 14px;
+}
+
+.menu-status {
+  border-top: 1px solid rgb(255 255 255 / 0.18);
+  padding-top: 22px;
 }
 
 .gallery-section {
@@ -505,6 +563,7 @@ body.nav-open .site-nav {
   border-radius: var(--radius-md);
   background: var(--color-surface);
   padding: 22px;
+  box-shadow: 0 14px 36px rgb(22 20 17 / 0.08);
 }
 
 .contact-panel dl {
@@ -602,6 +661,15 @@ body.nav-open .site-nav {
   .contact-section__grid {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
     align-items: start;
+  }
+
+  .contact-panel dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-panel div:nth-last-child(-n + 2) {
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 
   .signature-grid {

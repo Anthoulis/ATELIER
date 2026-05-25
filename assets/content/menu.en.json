@@ -1,0 +1,369 @@
+{
+  "language": "en",
+  "currency": "EUR",
+  "labels": {
+    "pricePrefix": "EUR",
+    "loading": "Loading menu...",
+    "unavailable": "Menu is temporarily unavailable.",
+    "tags": {
+      "signature": "Signature",
+      "vegetarian": "Vegetarian",
+      "spicy": "Spicy"
+    }
+  },
+  "categories": [
+    {
+      "id": "starters",
+      "title": "Starters",
+      "description": "Savory starters and fresh-cut sides.",
+      "items": [
+        {
+          "id": "savory-loukoumades",
+          "name": "Savory Loukoumades",
+          "description": "Savory loukoumades filled with feta and herbs, served with tomato jam.",
+          "price": 5
+        },
+        {
+          "id": "cheese-croquettes",
+          "name": "Cheese Croquettes",
+          "description": "Golden cheese croquettes served with tomato jam.",
+          "price": 6
+        },
+        {
+          "id": "fresh-cut-fries",
+          "name": "Fresh-Cut Fries",
+          "description": "",
+          "price": 6
+        },
+        {
+          "id": "fresh-cut-fries-gremolata",
+          "name": "Fresh-Cut Fries with Gremolata",
+          "description": "",
+          "price": 7
+        },
+        {
+          "id": "croquant-mozzarella-stick",
+          "name": "Croquant Mozzarella Stick",
+          "description": "Crispy mozzarella stick glazed with aromatic spicy honey.",
+          "price": 6.5,
+          "tags": [
+            "spicy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hot-dogs",
+      "title": "Hot Dogs",
+      "description": "Frankfurter hot dogs with focused toppings.",
+      "items": [
+        {
+          "id": "classic-pickle-hot-dog",
+          "name": "Classic Pickle Hot Dog",
+          "description": "Frankfurter sausage, pickles, ketchup, mayonnaise.",
+          "price": 5.5
+        },
+        {
+          "id": "caramelized-onion-pecorino-hot-dog",
+          "name": "Caramelized Onion & Pecorino Hot Dog",
+          "description": "Frankfurter sausage, caramelized onions, Pecorino cheese, ketchup, mustard.",
+          "price": 6
+        }
+      ]
+    },
+    {
+      "id": "panini",
+      "title": "Panini",
+      "description": "Pressed panini with house-made components.",
+      "items": [
+        {
+          "id": "panini-pancetta-street-style",
+          "name": "Panini Pancetta Street Style",
+          "description": "Pancetta, coleslaw, fresh-cut fries, mayonnaise, BBQ sauce.",
+          "price": 9
+        },
+        {
+          "id": "croquant-chicken-panini",
+          "name": "Croquant Chicken Panini",
+          "description": "Crispy panko chicken, cheddar, coleslaw, pickles and ATELIER sauce.",
+          "price": 10,
+          "tags": [
+            "signature"
+          ]
+        },
+        {
+          "id": "truffle-beef-panini",
+          "name": "Truffle Beef Panini",
+          "description": "Double smashed Black Angus beef patties, cheddar, caramelized onions, fresh-cut fries, truffle mayonnaise.",
+          "price": 11
+        },
+        {
+          "id": "beef-fillet-panini-a-l-atelier",
+          "name": "Beef Fillet Panini à l’Atelier",
+          "description": "Tagliata-style beef fillet, spicy Graviera cheese, sautéed onion, pepper sauce, rocket.",
+          "price": 13,
+          "tags": [
+            "signature",
+            "spicy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "burgers",
+      "title": "Burgers",
+      "description": "100% Black Angus beef burgers and a grilled halloumi option.",
+      "items": [
+        {
+          "id": "forest-halloumi",
+          "name": "Forest Halloumi",
+          "description": "Grilled halloumi, sautéed mushrooms, caramelized onions, rocket, aioli.",
+          "price": 10,
+          "tags": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "croquant-chicken",
+          "name": "Croquant Chicken",
+          "description": "Crispy panko chicken, cheddar, tomato, iceberg lettuce and ATELIER sauce.",
+          "price": 10
+        },
+        {
+          "id": "spicy-croquant-chicken",
+          "name": "Spicy Croquant Chicken",
+          "description": "Crispy panko chicken, cheddar, coleslaw, spicy sauce.",
+          "price": 10.5,
+          "tags": [
+            "spicy"
+          ]
+        },
+        {
+          "id": "caramelized-onion-puree",
+          "name": "Caramelized Onion Purée",
+          "description": "Double smashed beef, mayonnaise, bacon and silky caramelized onion purée.",
+          "price": 10.5
+        },
+        {
+          "id": "julienne-potato",
+          "name": "Julienne Potato",
+          "description": "Double smashed beef, cheddar, egg, crispy julienne potato, ATELIER sauce.",
+          "price": 12
+        },
+        {
+          "id": "sweet-utopia",
+          "name": "Sweet Utopia",
+          "description": "Double smashed beef, cheddar, bacon, caramelized onions, BBQ sauce, pickles, lettuce, tomato jam, mustard.",
+          "price": 12.5
+        },
+        {
+          "id": "atelier-burger",
+          "name": "Atelier",
+          "description": "Double smashed beef, caramelized onions, truffle Graviera, rocket, fig jam.",
+          "price": 13.5,
+          "tags": [
+            "signature"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "title": "Desserts",
+      "description": "Warm loukoumades and Greek dessert classics.",
+      "items": [
+        {
+          "id": "warm-loukoumades-honey-walnut-cinnamon",
+          "name": "Warm Loukoumades with Honey, Walnut & Cinnamon",
+          "description": "",
+          "price": 5.5
+        },
+        {
+          "id": "warm-loukoumades-praline-cream",
+          "name": "Warm Loukoumades with Praline Cream",
+          "description": "",
+          "price": 6
+        },
+        {
+          "id": "ekmek-kataifi",
+          "name": "Ekmek Kataifi",
+          "description": "",
+          "price": 6.5
+        },
+        {
+          "id": "caramelized-galaktoboureko-rosette",
+          "name": "Caramelized Galaktoboureko Rosette",
+          "description": "",
+          "price": 7
+        }
+      ]
+    },
+    {
+      "id": "refreshments",
+      "title": "Refreshments",
+      "description": "Soft drinks, soda, tonic, and iced tea.",
+      "items": [
+        {
+          "id": "coca-cola",
+          "name": "Coca-Cola",
+          "description": "",
+          "price": 3
+        },
+        {
+          "id": "coca-cola-zero",
+          "name": "Coca-Cola Zero",
+          "description": "",
+          "price": 3
+        },
+        {
+          "id": "fanta-lemon",
+          "name": "Fanta Lemon",
+          "description": "",
+          "price": 3
+        },
+        {
+          "id": "sprite",
+          "name": "Sprite",
+          "description": "",
+          "price": 3
+        },
+        {
+          "id": "fanta-orange",
+          "name": "Fanta Orange",
+          "description": "",
+          "price": 3
+        },
+        {
+          "id": "iced-tea",
+          "name": "Iced Tea",
+          "description": "",
+          "price": 3
+        },
+        {
+          "id": "pink-grapefruit-soda",
+          "name": "Pink Grapefruit Soda",
+          "description": "",
+          "price": 3
+        },
+        {
+          "id": "soda-water",
+          "name": "Soda Water",
+          "description": "",
+          "price": 3
+        },
+        {
+          "id": "tonic-water",
+          "name": "Tonic Water",
+          "description": "",
+          "price": 3
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "Water",
+      "description": "Still and sparkling mineral water.",
+      "items": [
+        {
+          "id": "still-water",
+          "name": "Still Water",
+          "description": "",
+          "price": 0.5
+        },
+        {
+          "id": "sparkling-mineral-water",
+          "name": "Sparkling Mineral Water",
+          "description": "",
+          "price": 1
+        }
+      ]
+    },
+    {
+      "id": "beers",
+      "title": "Beers",
+      "description": "Lager, draught, and bottled beer selections.",
+      "items": [
+        {
+          "id": "alfa-lager",
+          "name": "Alfa Lager",
+          "description": "",
+          "price": 4
+        },
+        {
+          "id": "stella-artois",
+          "name": "Stella Artois",
+          "description": "",
+          "price": 5
+        },
+        {
+          "id": "guinness-draught",
+          "name": "Guinness Draught",
+          "description": "",
+          "price": 7
+        },
+        {
+          "id": "corona-extra",
+          "name": "Corona Extra",
+          "description": "",
+          "price": 6
+        },
+        {
+          "id": "john-smiths-extra-smooth",
+          "name": "John Smith’s Extra Smooth",
+          "description": "",
+          "price": 6
+        }
+      ]
+    },
+    {
+      "id": "spirits",
+      "title": "Spirits",
+      "description": "Vodka, gin, rum, and spritz serves.",
+      "items": [
+        {
+          "id": "absolut-vodka",
+          "name": "Absolut Vodka",
+          "description": "",
+          "price": 6
+        },
+        {
+          "id": "tanqueray-london-dry-gin",
+          "name": "Tanqueray London Dry Gin",
+          "description": "",
+          "price": 6
+        },
+        {
+          "id": "campari-spritz",
+          "name": "Campari Spritz",
+          "description": "",
+          "price": 8
+        },
+        {
+          "id": "bacardi-rum",
+          "name": "Bacardi Rum",
+          "description": "",
+          "price": 6
+        },
+        {
+          "id": "havana-club-rum",
+          "name": "Havana Club Rum",
+          "description": "",
+          "price": 6
+        }
+      ]
+    },
+    {
+      "id": "aperitif",
+      "title": "Aperitif",
+      "description": "Aperitif serves for the start of the meal.",
+      "items": [
+        {
+          "id": "aperol-spritz",
+          "name": "Aperol Spritz",
+          "description": "",
+          "price": 8
+        }
+      ]
+    }
+  ]
+}
