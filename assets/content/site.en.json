@@ -1,0 +1,100 @@
+{
+  "skipLink": "Skip to content",
+  "meta": {
+    "title": "ATELIER | Premium Burgers, Panini & Drinks",
+    "description": "ATELIER is a premium store for burgers, panini, desserts, drinks, and selected products.",
+    "ogTitle": "ATELIER | Premium Burgers, Panini & Drinks",
+    "ogDescription": "ATELIER is a premium store for burgers, panini, desserts, drinks, and selected products."
+  },
+  "menuMeta": {
+    "title": "ATELIER Menu | Food & Drinks",
+    "description": "Explore the full ATELIER food and drinks menu, including starters, panini, burgers, desserts, beers, spirits, and aperitifs.",
+    "ogTitle": "ATELIER Menu | Food & Drinks",
+    "ogDescription": "Explore the full ATELIER food and drinks menu."
+  },
+  "nav": {
+    "label": "Primary navigation",
+    "concept": "Concept",
+    "signatures": "Signatures",
+    "menu": "Menu",
+    "contact": "Contact"
+  },
+  "languageToggle": {
+    "label": "Language selection"
+  },
+  "navToggle": {
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "hero": {
+    "kicker": "Premium casual food",
+    "actionsLabel": "Primary actions",
+    "primaryCta": "View menu",
+    "secondaryCta": "Find us"
+  },
+  "concept": {
+    "kicker": "Concept",
+    "title": "A premium store, thoughtfully crafted.",
+    "body": "ATELIER brings together food, drinks, and selected products in a refined, contemporary setting."
+  },
+  "signatures": {
+    "kicker": "Signatures",
+    "title": "ATELIER signatures."
+  },
+  "signatureCards": {
+    "beefFilletPanini": {
+      "kicker": "Panini",
+      "title": "Beef Fillet Panini à l’Atelier",
+      "body": "Tagliata-style beef fillet, spicy Graviera cheese, sautéed onion, pepper sauce, rocket.",
+      "price": "€14"
+    },
+    "atelierBurger": {
+      "featuredLabel": "The signature",
+      "kicker": "Burger",
+      "title": "Atelier",
+      "body": "Double smashed beef, caramelized onions, truffle Graviera, rocket, fig jam.",
+      "price": "€14"
+    },
+    "galaktoboureko": {
+      "kicker": "Dessert",
+      "title": "Caramelized Galaktoboureko Rosette",
+      "body": "Caramelized galaktoboureko shaped into an elegant rosette.",
+      "price": "€7"
+    }
+  },
+  "menu": {
+    "title": "Menu",
+    "loading": "Loading menu...",
+    "unavailable": "Menu is temporarily unavailable.",
+    "tagsLabel": "Item tags",
+    "categoryNavLabel": "Menu categories",
+    "allCategoriesLabel": "All categories",
+    "tags": {
+      "signature": "Signature",
+      "vegetarian": "Vegetarian",
+      "spicy": "Spicy"
+    }
+  },
+  "contact": {
+    "kicker": "Contact",
+    "instagramLabel": "Instagram",
+    "instagramTitle": "@atelier_crafted_eats",
+    "instagramCategory": "Food & drink",
+    "instagramStatus": "No posts yet",
+    "instagramCta": "View profile",
+    "instagramAriaLabel": "Open @atelier_crafted_eats on Instagram",
+    "mapsLabel": "Google Maps",
+    "mapsPreviewLabel": "Location preview",
+    "mapsTitle": "ATELIER location",
+    "mapsCta": "Open in Google Maps",
+    "mapsAriaLabel": "Open ATELIER location in Google Maps"
+  },
+  "footer": {},
+  "legal": {
+    "label": "Legal and service information",
+    "marketRegulationManagerLabel": "Market Regulation Officer:",
+    "marketRegulationManagerValue": "EMMANOUIL PAPALIS",
+    "vatNotice": "All prices include VAT.",
+    "allergyNotice": "Please inform us about any allergies or intolerances before ordering."
+  }
+}

@@ -1,54 +1,73 @@
 # ATELIER Site Direction
 
-## Direction
+## Visual Direction
 
-ATELIER is now a premium static restaurant website for a burger, panini, dessert, and drinks concept.
+ATELIER should feel:
 
-The site should feel:
-
+- Premium casual
 - Clean
 - Elegant
 - Food-focused
 - Modern
-- Premium casual rather than decorative or app-like
+- Calm rather than noisy or fast-food oriented
+
+Photography, restrained typography, dark stone, warm light, and simple layouts should carry the brand. Avoid decorative UI that competes with the food.
 
 ## Technical Direction
 
 - Plain static HTML, CSS, and JavaScript only.
-- No Vite, npm build setup, React, WordPress, bundlers, or frameworks.
-- `index.html` owns the public page structure and most static copy.
-- Menu content may live in static JSON under `assets/content` and be rendered by minimal vanilla JavaScript.
-- EN/EL language support may use a small translation map and localStorage.
-- `assets/css/style.css` owns all styling for now.
-- `assets/js/main.js` is limited to simple UI interactions, language switching, and menu rendering.
+- Static JSON is allowed for bilingual site copy and menu content.
+- Native ES modules are allowed.
+- No npm, Vite, React, WordPress, framework, bundler, or build step.
+- `index.html` owns the semantic page structure.
+- `assets/css/style.css` owns styling for now.
+- `assets/js/*` should stay small and split by responsibility.
 
-## Asset Organization
+## Content Direction
 
-```text
-assets/images/logo/
-assets/images/food/
-assets/images/drinks/
-assets/images/atmosphere/
-```
-
-## Content Organization
+Menu data is the source of truth in:
 
 ```text
 assets/content/menu.en.json
 assets/content/menu.el.json
 ```
 
-Menu JSON is the source of truth for categories, items, descriptions, prices, and useful item tags. Keep English and Greek files aligned by ID.
+Site copy and UI strings live in:
 
-Current project-bound bitmap assets were generated for the static presentation and copied into the workspace:
+```text
+assets/content/site.en.json
+assets/content/site.el.json
+```
 
-- `assets/images/food/atelier-burger-hero.png`
-- `assets/images/food/croquant-panini.png`
-- `assets/images/drinks/spritz-service.png`
-- `assets/images/atmosphere/evening-counter.png`
+Keep English and Greek content aligned by IDs and translation keys. Greek should sound natural and concise, with English product terms kept only when they are brand/product language such as ATELIER, Burger, Panini, BBQ, cheddar, coleslaw, aioli, and Black Angus.
 
-## Content Notes
+## Confirmed Information Policy
 
-Opening details are intentionally not invented. Replace the contact section only when the real address, hours, phone, reservations, delivery links, or social channels are confirmed.
+Do not invent:
 
-JSON-LD is intentionally omitted for now because there is no confirmed real-world address, opening hours, phone number, reservation URL, or social profile to publish honestly.
+- Real address
+- Opening hours
+- Phone numbers
+- Reservation links
+- Delivery links
+- Legal business names
+- VAT numbers
+
+Use only details and links confirmed by the owner. The current Instagram profile and Google Maps link are confirmed and may be published.
+
+## Legal And Contact
+
+The footer includes confirmed service information from the supplied menu:
+
+- Market Regulation Officer
+- All prices include VAT
+- Allergy notice
+
+Restaurant JSON-LD is intentionally omitted until real-world business data exists.
+
+## Future Improvements
+
+- Add address, hours, phone, and reservation details when confirmed.
+- Add Restaurant JSON-LD once address, hours, phone, and business identity are confirmed.
+- Confirm final product/pricing decisions against the printed menu.
+- Add reservation and delivery links when available.

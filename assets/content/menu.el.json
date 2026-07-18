@@ -1,61 +1,46 @@
 {
-  "language": "el",
-  "currency": "EUR",
-  "labels": {
-    "pricePrefix": "EUR",
-    "loading": "Φόρτωση μενού...",
-    "unavailable": "Το μενού δεν είναι προσωρινά διαθέσιμο.",
-    "tags": {
-      "signature": "Πρόταση",
-      "vegetarian": "Χορτοφαγικό",
-      "spicy": "Πικάντικο"
-    }
-  },
   "categories": [
     {
       "id": "starters",
       "title": "Ορεκτικά",
-      "description": "Αλμυρές μπουκιές και φρεσκοκομμένες πατάτες.",
+      "description": "",
       "items": [
         {
-          "id": "savory-loukoumades",
-          "name": "Αλμυροί Λουκουμάδες",
-          "description": "Γεμιστοί με φέτα και μυρωδικά, σερβιρισμένοι με μαρμελάδα ντομάτας.",
+          "id": "fresh-cut-fries-spicy-bacon",
+          "name": "Φρεσκοκομμένες Πατάτες με Πικάντικη Σος Καπνιστού Bacon",
+          "description": "",
           "price": 5
+        },
+        {
+          "id": "fresh-cut-fries-parmesan",
+          "name": "Φρεσκοκομμένες Πατάτες με Αρωματισμένη Παρμεζάνα",
+          "description": "",
+          "price": 6
         },
         {
           "id": "cheese-croquettes",
           "name": "Κροκέτες Τυριού",
           "description": "Χρυσαφένιες κροκέτες τυριού, σερβιρισμένες με μαρμελάδα ντομάτας.",
-          "price": 6
-        },
-        {
-          "id": "fresh-cut-fries",
-          "name": "Φρεσκοκομμένες Πατάτες",
-          "description": "",
-          "price": 6
-        },
-        {
-          "id": "fresh-cut-fries-gremolata",
-          "name": "Φρεσκοκομμένες Πατάτες με Gremolata",
-          "description": "",
           "price": 7
         },
         {
           "id": "croquant-mozzarella-stick",
           "name": "Croquant Stick Μοτσαρέλας",
           "description": "Τραγανό stick μοτσαρέλας, γλασαρισμένο με αρωματικό πικάντικο μέλι.",
-          "price": 6.5,
-          "tags": [
-            "spicy"
-          ]
+          "price": 7.5
+        },
+        {
+          "id": "savory-loukoumades",
+          "name": "Αλμυροί Λουκουμάδες",
+          "description": "Γεμιστοί με φέτα και μυρωδικά, σερβιρισμένοι με μαρμελάδα φράουλας.",
+          "price": 7.5
         }
       ]
     },
     {
       "id": "hot-dogs",
       "title": "Hot Dogs",
-      "description": "Hot dogs με λουκάνικο και focused toppings.",
+      "description": "",
       "items": [
         {
           "id": "classic-pickle-hot-dog",
@@ -74,109 +59,93 @@
     {
       "id": "panini",
       "title": "Panini",
-      "description": "Panini με προσεγμένες γεμίσεις και house-made στοιχεία.",
+      "description": "",
       "items": [
         {
           "id": "panini-pancetta-street-style",
           "name": "Panini Πανσέτα Street Style",
           "description": "Πανσέτα, coleslaw, φρεσκοκομμένες πατάτες, μαγιονέζα, σος BBQ.",
-          "price": 9
+          "price": 9.5
         },
         {
           "id": "croquant-chicken-panini",
           "name": "Panini Croquant Κοτόπουλο",
           "description": "Τραγανό κοτόπουλο panko, cheddar, coleslaw, πίκλες, σος ATELIER.",
-          "price": 10,
-          "tags": [
-            "signature"
-          ]
+          "price": 11
         },
         {
           "id": "truffle-beef-panini",
           "name": "Panini Μοσχαριού με Άρωμα Τρούφας",
           "description": "Διπλό smash μοσχάρι Black Angus, cheddar, καραμελωμένα κρεμμύδια, φρεσκοκομμένες πατάτες, μαγιονέζα τρούφας.",
-          "price": 11
+          "price": 12
         },
         {
           "id": "beef-fillet-panini-a-l-atelier",
           "name": "Panini Φιλέτο Μοσχαριού à l’Atelier",
           "description": "Ταλιάτα μοσχαρίσιου φιλέτου, πικάντικη γραβιέρα, σοτέ κρεμμύδι, σάλτσα πιπεριού, ρόκα.",
-          "price": 13,
-          "tags": [
-            "signature",
-            "spicy"
-          ]
+          "price": 14
         }
       ]
     },
     {
       "id": "burgers",
       "title": "Burgers",
-      "description": "100% μοσχαρίσιο Black Angus και επιλογή με ψητό χαλούμι.",
+      "description": "Μοσχαρίσιο Black Angus",
       "items": [
         {
           "id": "forest-halloumi",
           "name": "Forest Halloumi",
           "description": "Ψητό χαλούμι, σοτέ μανιτάρια, καραμελωμένο κρεμμύδι, ρόκα, σάλτσα aioli.",
-          "price": 10,
-          "tags": [
-            "vegetarian"
-          ]
+          "price": 10
         },
         {
           "id": "croquant-chicken",
           "name": "Croquant Κοτόπουλο",
           "description": "Τραγανό κοτόπουλο panko, cheddar, ντομάτα, iceberg, σος ATELIER.",
-          "price": 10
+          "price": 10.5
         },
         {
           "id": "spicy-croquant-chicken",
           "name": "Πικάντικο Croquant Κοτόπουλο",
           "description": "Τραγανό κοτόπουλο panko, cheddar, coleslaw, πικάντικη σος.",
-          "price": 10.5,
-          "tags": [
-            "spicy"
-          ]
+          "price": 11
         },
         {
           "id": "caramelized-onion-puree",
           "name": "Πουρέ Καραμελωμένου Κρεμμυδιού",
-          "description": "Διπλό smash μοσχάρι, μαγιονέζα, bacon, κρέμα καραμελωμένου κρεμμυδιού.",
-          "price": 10.5
+          "description": "Διπλό smash μοσχάρι, μαγιονέζα, bacon, πουρέ καραμελωμένου κρεμμυδιού.",
+          "price": 11.5
         },
         {
           "id": "julienne-potato",
           "name": "Πατάτα Julienne",
           "description": "Διπλό smash μοσχάρι, cheddar, αυγό, πατάτα julienne, σος ATELIER.",
-          "price": 12
+          "price": 12.5
         },
         {
           "id": "sweet-utopia",
           "name": "Γλυκιά Ουτοπία",
           "description": "Διπλό smash μοσχάρι, cheddar, bacon, καραμελωμένο κρεμμύδι, BBQ, πίκλες, μαρούλι, μαρμελάδα ντομάτας, μουστάρδα.",
-          "price": 12.5
+          "price": 13
         },
         {
           "id": "atelier-burger",
           "name": "Atelier",
           "description": "Διπλό smash μοσχάρι, καραμελωμένο κρεμμύδι, γραβιέρα τρούφας, ρόκα, μαρμελάδα σύκου.",
-          "price": 13.5,
-          "tags": [
-            "signature"
-          ]
+          "price": 14
         }
       ]
     },
     {
       "id": "desserts",
-      "title": "Γλυκά",
-      "description": "Ζεστοί λουκουμάδες και ελληνικά dessert classics.",
+      "title": "Επιδόρπια",
+      "description": "",
       "items": [
         {
           "id": "warm-loukoumades-honey-walnut-cinnamon",
-          "name": "Ζεστοί Λουκουμάδες με Μέλι, Καρύδι & Κανέλα",
+          "name": "Ζεστοί Λουκουμάδες με Θυμαρίσιο Μέλι, Καρύδι & Κανέλα",
           "description": "",
-          "price": 5.5
+          "price": 6
         },
         {
           "id": "warm-loukoumades-praline-cream",
@@ -201,7 +170,7 @@
     {
       "id": "refreshments",
       "title": "Αναψυκτικά",
-      "description": "Αναψυκτικά, soda, tonic και iced tea.",
+      "description": "",
       "items": [
         {
           "id": "coca-cola",
@@ -212,12 +181,6 @@
         {
           "id": "coca-cola-zero",
           "name": "Coca-Cola Zero",
-          "description": "",
-          "price": 3
-        },
-        {
-          "id": "fanta-lemon",
-          "name": "Fanta Lemon",
           "description": "",
           "price": 3
         },
@@ -234,6 +197,12 @@
           "price": 3
         },
         {
+          "id": "fanta-lemon",
+          "name": "Fanta Lemon",
+          "description": "",
+          "price": 3
+        },
+        {
           "id": "iced-tea",
           "name": "Iced Tea",
           "description": "",
@@ -243,17 +212,17 @@
           "id": "pink-grapefruit-soda",
           "name": "Pink Grapefruit Soda",
           "description": "",
+          "price": 4
+        },
+        {
+          "id": "tonic-water",
+          "name": "Tonic Water",
+          "description": "",
           "price": 3
         },
         {
           "id": "soda-water",
           "name": "Soda Water",
-          "description": "",
-          "price": 3
-        },
-        {
-          "id": "tonic-water",
-          "name": "Tonic Water",
           "description": "",
           "price": 3
         }
@@ -262,7 +231,7 @@
     {
       "id": "water",
       "title": "Νερά",
-      "description": "Still και sparkling mineral water.",
+      "description": "",
       "items": [
         {
           "id": "still-water",
@@ -274,14 +243,14 @@
           "id": "sparkling-mineral-water",
           "name": "Sparkling Mineral Water",
           "description": "",
-          "price": 1
+          "price": 2.5
         }
       ]
     },
     {
       "id": "beers",
       "title": "Μπύρες",
-      "description": "Επιλεγμένες μπύρες σε lager, draught και bottle επιλογές.",
+      "description": "",
       "items": [
         {
           "id": "alfa-lager",
@@ -290,26 +259,20 @@
           "price": 4
         },
         {
+          "id": "mythos",
+          "name": "Mythos",
+          "description": "",
+          "price": 4
+        },
+        {
           "id": "stella-artois",
           "name": "Stella Artois",
-          "description": "",
-          "price": 5
-        },
-        {
-          "id": "guinness-draught",
-          "name": "Guinness Draught",
-          "description": "",
-          "price": 7
-        },
-        {
-          "id": "corona-extra",
-          "name": "Corona Extra",
           "description": "",
           "price": 6
         },
         {
-          "id": "john-smiths-extra-smooth",
-          "name": "John Smith’s Extra Smooth",
+          "id": "corona-extra",
+          "name": "Corona Extra",
           "description": "",
           "price": 6
         }
@@ -318,50 +281,50 @@
     {
       "id": "spirits",
       "title": "Spirits",
-      "description": "Vodka, gin, rum και spritz serves.",
+      "description": "",
       "items": [
         {
-          "id": "absolut-vodka",
-          "name": "Absolut Vodka",
+          "id": "stoli-vodka",
+          "name": "Stoli Vodka",
           "description": "",
-          "price": 6
+          "price": 8
         },
         {
           "id": "tanqueray-london-dry-gin",
           "name": "Tanqueray London Dry Gin",
           "description": "",
-          "price": 6
+          "price": 8
         },
         {
-          "id": "campari-spritz",
-          "name": "Campari Spritz",
+          "id": "jose-cuervo-especial-silver-tequila",
+          "name": "Jose Cuervo Especial Silver Tequila",
           "description": "",
           "price": 8
         },
         {
-          "id": "bacardi-rum",
-          "name": "Bacardi Rum",
+          "id": "havana-club-7-anos-rum",
+          "name": "Havana Club 7 Años Rum",
           "description": "",
-          "price": 6
-        },
-        {
-          "id": "havana-club-rum",
-          "name": "Havana Club Rum",
-          "description": "",
-          "price": 6
+          "price": 8.5
         }
       ]
     },
     {
       "id": "aperitif",
-      "title": "Aperitif",
-      "description": "Aperitif επιλογές για την αρχή του γεύματος.",
+      "title": "Aperitifs",
+      "description": "",
       "items": [
         {
           "id": "aperol-spritz",
           "name": "Aperol Spritz",
           "description": "",
-          "price": 8
+          "price": 9
+        },
+        {
+          "id": "campari-spritz",
+          "name": "Campari Spritz",
+          "description": "",
+          "price": 9
         }
       ]
     }

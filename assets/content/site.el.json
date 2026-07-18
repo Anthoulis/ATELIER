@@ -1,0 +1,100 @@
+{
+  "skipLink": "Μετάβαση στο περιεχόμενο",
+  "meta": {
+    "title": "ATELIER | Premium Burgers, Panini & Ποτά",
+    "description": "Το ATELIER είναι ένα premium κατάστημα για burgers, panini, γλυκά, ποτά και επιλεγμένα προϊόντα.",
+    "ogTitle": "ATELIER | Premium Burgers, Panini & Ποτά",
+    "ogDescription": "Το ATELIER είναι ένα premium κατάστημα για burgers, panini, γλυκά, ποτά και επιλεγμένα προϊόντα."
+  },
+  "menuMeta": {
+    "title": "Μενού ATELIER | Φαγητό & Ποτά",
+    "description": "Δείτε το πλήρες μενού φαγητού και ποτών του ATELIER, με ορεκτικά, panini, burgers, επιδόρπια, μπύρες, αποστάγματα και aperitifs.",
+    "ogTitle": "Μενού ATELIER | Φαγητό & Ποτά",
+    "ogDescription": "Δείτε το πλήρες μενού φαγητού και ποτών του ATELIER."
+  },
+  "nav": {
+    "label": "Κύρια πλοήγηση",
+    "concept": "Concept",
+    "signatures": "Προτάσεις",
+    "menu": "Μενού",
+    "contact": "Επικοινωνία"
+  },
+  "languageToggle": {
+    "label": "Επιλογή γλώσσας"
+  },
+  "navToggle": {
+    "open": "Άνοιγμα μενού",
+    "close": "Κλείσιμο μενού"
+  },
+  "hero": {
+    "kicker": "Premium casual φαγητό",
+    "actionsLabel": "Κύριες ενέργειες",
+    "primaryCta": "Δες το μενού",
+    "secondaryCta": "Βρες μας"
+  },
+  "concept": {
+    "kicker": "Concept",
+    "title": "Ένα premium κατάστημα, με προσοχή στη λεπτομέρεια.",
+    "body": "Το ATELIER συνδυάζει φαγητό, ποτά και επιλεγμένα προϊόντα σε ένα σύγχρονο, προσεγμένο περιβάλλον."
+  },
+  "signatures": {
+    "kicker": "Προτάσεις",
+    "title": "Οι υπογραφές του ATELIER."
+  },
+  "signatureCards": {
+    "beefFilletPanini": {
+      "kicker": "Panini",
+      "title": "Panini Φιλέτο Μοσχαριού à l’Atelier",
+      "body": "Ταλιάτα μοσχαρίσιου φιλέτου, πικάντικη γραβιέρα, σοτέ κρεμμύδι, σάλτσα πιπεριού, ρόκα.",
+      "price": "€14"
+    },
+    "atelierBurger": {
+      "featuredLabel": "Η υπογραφή του ATELIER",
+      "kicker": "Burger",
+      "title": "Atelier",
+      "body": "Διπλό smash μοσχάρι, καραμελωμένο κρεμμύδι, γραβιέρα τρούφας, ρόκα, μαρμελάδα σύκου.",
+      "price": "€14"
+    },
+    "galaktoboureko": {
+      "kicker": "Επιδόρπιο",
+      "title": "Καραμελωμένη Ροζέτα Γαλακτομπούρεκου",
+      "body": "Καραμελωμένο γαλακτομπούρεκο σε κομψή ροζέτα.",
+      "price": "€7"
+    }
+  },
+  "menu": {
+    "title": "Μενού",
+    "loading": "Φόρτωση μενού...",
+    "unavailable": "Το μενού δεν είναι προσωρινά διαθέσιμο.",
+    "tagsLabel": "Ετικέτες πιάτου",
+    "categoryNavLabel": "Κατηγορίες μενού",
+    "allCategoriesLabel": "Όλες οι κατηγορίες",
+    "tags": {
+      "signature": "Πρόταση",
+      "vegetarian": "Χορτοφαγικό",
+      "spicy": "Πικάντικο"
+    }
+  },
+  "contact": {
+    "kicker": "Επικοινωνία",
+    "instagramLabel": "Instagram",
+    "instagramTitle": "@atelier_crafted_eats",
+    "instagramCategory": "Φαγητό & ποτό",
+    "instagramStatus": "Δεν υπάρχουν ακόμη δημοσιεύσεις",
+    "instagramCta": "Προβολή προφίλ",
+    "instagramAriaLabel": "Άνοιγμα του @atelier_crafted_eats στο Instagram",
+    "mapsLabel": "Google Maps",
+    "mapsPreviewLabel": "Προεπισκόπηση τοποθεσίας",
+    "mapsTitle": "Τοποθεσία ATELIER",
+    "mapsCta": "Άνοιγμα στο Google Maps",
+    "mapsAriaLabel": "Άνοιγμα τοποθεσίας ATELIER στο Google Maps"
+  },
+  "footer": {},
+  "legal": {
+    "label": "Νομικές πληροφορίες και πληροφορίες εξυπηρέτησης",
+    "marketRegulationManagerLabel": "Αγορανομικός Υπεύθυνος:",
+    "marketRegulationManagerValue": "ΕΜΜΑΝΟΥΗΛ ΠΑΠΑΛΗΣ",
+    "vatNotice": "Οι τιμές περιλαμβάνουν ΦΠΑ.",
+    "allergyNotice": "Παρακαλούμε ενημερώστε μας για τυχόν αλλεργίες ή δυσανεξίες πριν την παραγγελία."
+  }
+}

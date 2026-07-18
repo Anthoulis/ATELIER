@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-meta-namespace="menuMeta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Explore the full ATELIER food and drinks menu, including starters, panini, burgers, desserts, beers, spirits, and aperitifs."
+  >
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="ATELIER Menu | Food & Drinks">
+  <meta
+    property="og:description"
+    content="Explore the full ATELIER food and drinks menu."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/food/atelier-burger-hero.png">
+  <meta property="og:image:alt" content="ATELIER signature burger with truffle Graviera, rocket, and fig jam.">
+  <title>ATELIER Menu | Food & Drinks</title>
+  <link rel="icon" href="assets/images/logo/atelier-hat.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260718-5">
+  <script type="module" src="assets/js/main.js?v=20260718-2"></script>
+</head>
+<body class="inner-page">
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to content</a>
+
+  <header class="site-header" data-site-header>
+    <div class="site-header__inner">
+      <a class="brand-link" href="index.html#top" aria-label="ATELIER home">
+        <img
+          class="brand-link__logo"
+          src="assets/images/logo/atelier-wordmark.svg"
+          width="412"
+          height="198"
+          alt="ATELIER Crafted Eats"
+        >
+      </a>
+
+      <nav
+        class="site-nav"
+        id="site-nav"
+        aria-label="Primary navigation"
+        data-site-nav
+        data-i18n-aria-label="nav.label"
+      >
+        <a href="index.html#concept" data-i18n="nav.concept">Concept</a>
+        <a href="index.html#signatures" data-i18n="nav.signatures">Signatures</a>
+        <a href="menu.html" aria-current="page" data-i18n="nav.menu">Menu</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div
+        class="language-toggle"
+        role="group"
+        aria-label="Language selection"
+        data-i18n-aria-label="languageToggle.label"
+      >
+        <button
+          class="language-toggle__button"
+          type="button"
+          aria-pressed="true"
+          data-language-button="en"
+        >
+          EN
+        </button>
+        <button
+          class="language-toggle__button"
+          type="button"
+          aria-pressed="false"
+          data-language-button="el"
+        >
+          EL
+        </button>
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open menu"
+        data-nav-toggle
+      >
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="menu-section menu-section--standalone page-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-inner">
+        <div class="menu-page-heading">
+          <img
+            class="menu-page-heading__mark"
+            src="assets/images/logo/atelier-hat.svg"
+            width="112"
+            height="58"
+            alt=""
+            aria-hidden="true"
+          >
+          <h1 id="menu-title" data-i18n="menu.title">Menu</h1>
+        </div>
+
+        <p class="menu-status" data-menu-status aria-live="polite" data-i18n="menu.loading" hidden>Loading menu...</p>
+        <div class="menu-layout" id="menu-root" data-menu-root></div>
+        <noscript>
+          <p class="menu-status">Enable JavaScript to view the structured menu.</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <img
+        class="site-footer__logo"
+        src="assets/images/logo/atelier-wordmark.svg"
+        width="412"
+        height="198"
+        alt="ATELIER Crafted Eats"
+        loading="lazy"
+      >
+    </div>
+    <div
+      class="site-footer__legal"
+      aria-label="Legal and service information"
+      data-i18n-aria-label="legal.label"
+    >
+      <div class="section-inner site-footer__legal-grid">
+        <p>
+          <strong data-i18n="legal.marketRegulationManagerLabel">Market Regulation Officer:</strong>
+          <span data-i18n="legal.marketRegulationManagerValue">EMMANOUIL PAPALIS</span>
+        </p>
+        <p data-i18n="legal.vatNotice">All prices include VAT.</p>
+        <p data-i18n="legal.allergyNotice">Please inform us about any allergies or intolerances before ordering.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

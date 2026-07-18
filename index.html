@@ -5,22 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="ATELIER is a premium casual restaurant concept for composed burgers, pressed panini, desserts, and all-day drinks."
+    content="ATELIER is a premium store for burgers, panini, desserts, drinks, and selected products."
   >
-  <meta property="og:title" content="ATELIER | Premium Burger, Panini & Drinks Restaurant">
+  <meta name="theme-color" content="#161411">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="ATELIER | Premium Burgers, Panini & Drinks">
   <meta
     property="og:description"
-    content="A clean, modern restaurant concept shaped around burgers, panini, desserts, and drinks."
+    content="ATELIER is a premium store for burgers, panini, desserts, drinks, and selected products."
   >
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/food/atelier-burger-hero.png">
-  <meta property="og:image:alt" content="ATELIER burger served with fries on a dark stone counter.">
-  <title>ATELIER | Premium Burger, Panini & Drinks Restaurant</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
+  <meta property="og:image:alt" content="ATELIER signature burger with truffle Graviera, rocket, and fig jam.">
+  <title>ATELIER | Premium Burgers, Panini & Drinks</title>
+  <link rel="icon" href="assets/images/logo/atelier-hat.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260718-5">
+  <script type="module" src="assets/js/main.js?v=20260718-2"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to content</a>
 
   <header class="site-header" data-site-header>
     <div class="site-header__inner">
@@ -28,21 +31,31 @@
         <img
           class="brand-link__logo"
           src="assets/images/logo/atelier-wordmark.svg"
-          width="180"
-          height="56"
-          alt="ATELIER"
+          width="412"
+          height="198"
+          alt="ATELIER Crafted Eats"
         >
       </a>
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+      <nav
+        class="site-nav"
+        id="site-nav"
+        aria-label="Primary navigation"
+        data-site-nav
+        data-i18n-aria-label="nav.label"
+      >
         <a href="#concept" data-i18n="nav.concept">Concept</a>
         <a href="#signatures" data-i18n="nav.signatures">Signatures</a>
-        <a href="#menu" data-i18n="nav.menu">Menu</a>
-        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="menu.html" data-i18n="nav.menu">Menu</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
 
-      <div class="language-toggle" aria-label="Language selection">
+      <div
+        class="language-toggle"
+        role="group"
+        aria-label="Language selection"
+        data-i18n-aria-label="languageToggle.label"
+      >
         <button
           class="language-toggle__button"
           type="button"
@@ -80,23 +93,25 @@
     <section class="hero-section" id="top" aria-labelledby="hero-title">
       <img
         class="hero-section__image"
-        src="assets/images/food/atelier-burger-hero.png"
-        width="1796"
-        height="876"
+        src="assets/images/food/atelier-burger-hero.webp?v=20260718-2"
+        width="1774"
+        height="887"
         alt=""
         aria-hidden="true"
+        fetchpriority="high"
       >
       <div class="hero-section__overlay"></div>
       <div class="hero-section__content">
         <p class="section-kicker" data-i18n="hero.kicker">Premium casual food</p>
         <h1 id="hero-title">ATELIER</h1>
-        <p class="hero-section__lede" data-i18n="hero.lede">
-          Burgers, panini, desserts, and drinks shaped with the precision of a
-          workshop and the ease of modern all-day dining.
-        </p>
-        <div class="hero-section__actions" aria-label="Primary actions">
-          <a class="button button--primary" href="#menu" data-i18n="hero.primaryCta">View menu</a>
-          <a class="button button--secondary" href="#contact" data-i18n="hero.secondaryCta">Opening details</a>
+        <div
+          class="hero-section__actions"
+          role="group"
+          aria-label="Primary actions"
+          data-i18n-aria-label="hero.actionsLabel"
+        >
+          <a class="button button--primary" href="menu.html" data-i18n="hero.primaryCta">View menu</a>
+          <a class="button button--secondary" href="#contact" data-i18n="hero.secondaryCta">Find us</a>
         </div>
       </div>
     </section>
@@ -105,20 +120,11 @@
       <div class="section-inner concept-section__grid">
         <div class="section-heading">
           <p class="section-kicker" data-i18n="concept.kicker">Concept</p>
-          <h2 id="concept-title" data-i18n="concept.title">A focused restaurant idea, built around quality.</h2>
+          <h2 id="concept-title" data-i18n="concept.title">A premium store, thoughtfully crafted.</h2>
         </div>
-        <div class="concept-section__copy">
-          <p data-i18n="concept.bodyOne">
-            ATELIER keeps the format tight: composed burgers, pressed panini,
-            crisp starters, warm desserts, and a drinks list that belongs to the
-            experience rather than sitting beside it.
-          </p>
-          <p data-i18n="concept.bodyTwo">
-            The visual direction is clean and food-led. Dark stone, warm light,
-            disciplined typography, and generous photography support a premium
-            casual brand without making the site feel like software.
-          </p>
-        </div>
+        <p class="concept-section__copy" data-i18n="concept.body">
+          ATELIER brings together food, drinks, and selected products in a refined, contemporary setting.
+        </p>
       </div>
     </section>
 
@@ -126,158 +132,145 @@
       <div class="section-inner">
         <div class="section-heading section-heading--center">
           <p class="section-kicker" data-i18n="signatures.kicker">Signatures</p>
-          <h2 id="signatures-title" data-i18n="signatures.title">Built for appetite and repeat visits.</h2>
-          <p data-i18n="signatures.body">
-            A compact selection of ATELIER anchors, shown with enough restraint
-            for a premium restaurant site and enough detail to make the food real.
-          </p>
+          <h2 id="signatures-title" data-i18n="signatures.title">ATELIER signatures.</h2>
         </div>
 
         <div class="signature-grid">
-          <article class="signature-card">
-            <img
-              src="assets/images/food/atelier-burger-hero.png"
-              width="1796"
-              height="876"
-              alt="Double smashed ATELIER burger with fries on a dark stone board."
-              loading="lazy"
-            >
+          <article class="signature-card signature-card--featured">
+            <div class="signature-card__media-frame">
+              <img
+                class="signature-card__media"
+                src="assets/images/food/atelier-burger-hero.webp?v=20260718-2"
+                width="1774"
+                height="887"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="signature-card__badge" data-i18n="signatureCards.atelierBurger.featuredLabel">The signature</span>
+            </div>
             <div class="signature-card__body">
-              <p class="section-kicker" data-i18n="signatureCards.burger.kicker">Burger</p>
-              <h3 data-i18n="signatureCards.burger.title">ATELIER Burger</h3>
-              <p data-i18n="signatureCards.burger.body">Double smashed beef, caramelized onions, truffle graviera, rocket, and fig jam.</p>
+              <p class="section-kicker" data-i18n="signatureCards.atelierBurger.kicker">Burger</p>
+              <h3 data-i18n="signatureCards.atelierBurger.title">Atelier</h3>
+              <p data-i18n="signatureCards.atelierBurger.body">Double smashed beef, caramelized onions, truffle Graviera, rocket, fig jam.</p>
+              <p class="signature-card__price" data-i18n="signatureCards.atelierBurger.price">€14</p>
             </div>
           </article>
 
           <article class="signature-card">
-            <img
-              src="assets/images/food/croquant-panini.png"
-              width="1448"
-              height="1086"
-              alt="Golden pressed croquant chicken panini with fries and sauce."
-              loading="lazy"
-            >
+            <div class="signature-card__media-frame">
+              <img
+                class="signature-card__media"
+                src="assets/images/food/beef-fillet-panini-atelier.webp"
+                width="1200"
+                height="900"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
             <div class="signature-card__body">
-              <p class="section-kicker" data-i18n="signatureCards.panini.kicker">Panini</p>
-              <h3 data-i18n="signatureCards.panini.title">Croquant Chicken</h3>
-              <p data-i18n="signatureCards.panini.body">Crispy panko chicken, cheddar, coleslaw, pickles, and ATELIER sauce.</p>
+              <p class="section-kicker" data-i18n="signatureCards.beefFilletPanini.kicker">Panini</p>
+              <h3 data-i18n="signatureCards.beefFilletPanini.title">Beef Fillet Panini à l’Atelier</h3>
+              <p data-i18n="signatureCards.beefFilletPanini.body">Tagliata-style beef fillet, spicy Graviera cheese, sautéed onion, pepper sauce, rocket.</p>
+              <p class="signature-card__price" data-i18n="signatureCards.beefFilletPanini.price">€14</p>
             </div>
           </article>
 
           <article class="signature-card">
-            <img
-              src="assets/images/drinks/spritz-service.png"
-              width="1448"
-              height="1086"
-              alt="Two spritz drinks with citrus garnish on a dark restaurant bar."
-              loading="lazy"
-            >
+            <div class="signature-card__media-frame">
+              <img
+                class="signature-card__media"
+                src="assets/images/food/caramelized-galaktoboureko-rosette.webp"
+                width="1200"
+                height="900"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
             <div class="signature-card__body">
-              <p class="section-kicker" data-i18n="signatureCards.drinks.kicker">Drinks</p>
-              <h3 data-i18n="signatureCards.drinks.title">Spritz Service</h3>
-              <p data-i18n="signatureCards.drinks.body">Aperol, Campari, beers, spirits, and clean soft drinks for all-day service.</p>
+              <p class="section-kicker" data-i18n="signatureCards.galaktoboureko.kicker">Dessert</p>
+              <h3 data-i18n="signatureCards.galaktoboureko.title">Caramelized Galaktoboureko Rosette</h3>
+              <p data-i18n="signatureCards.galaktoboureko.body">Caramelized galaktoboureko shaped into an elegant rosette.</p>
+              <p class="signature-card__price" data-i18n="signatureCards.galaktoboureko.price">€7</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="menu-section page-section" id="menu" aria-labelledby="menu-title">
+    <section
+      class="contact-section page-section"
+      id="contact"
+      aria-labelledby="contact-title"
+    >
+      <h2 class="visually-hidden" id="contact-title" data-i18n="contact.kicker">Contact</h2>
       <div class="section-inner">
-        <div class="section-heading">
-          <p class="section-kicker" data-i18n="menu.kicker">Menu</p>
-          <h2 id="menu-title" data-i18n="menu.title">Food and drinks with a clear point of view.</h2>
-          <p data-i18n="menu.body">
-            The menu is structured for easy updates while keeping the website
-            lightweight, static, and focused on the food.
-          </p>
-        </div>
-
-        <div class="menu-layout" id="menu-root" data-menu-root aria-live="polite">
-          <p class="menu-status" data-i18n="menu.loading">Loading menu...</p>
-        </div>
-        <noscript>
-          <p class="menu-status">Enable JavaScript to view the structured menu.</p>
-        </noscript>
-      </div>
-    </section>
-
-    <section class="gallery-section page-section" id="gallery" aria-labelledby="gallery-title">
-      <div class="section-inner">
-        <div class="section-heading section-heading--center">
-          <p class="section-kicker" data-i18n="gallery.kicker">Visual language</p>
-          <h2 id="gallery-title" data-i18n="gallery.title">Food first, atmosphere close behind.</h2>
-          <p data-i18n="gallery.body">
-            The photography system favors texture, contrast, and service mood
-            over decorative UI.
-          </p>
-        </div>
-
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-item--wide">
-            <img
-              src="assets/images/atmosphere/evening-counter.png"
-              width="1448"
-              height="1086"
-              alt="Warm modern ATELIER restaurant counter prepared for evening service."
-              loading="lazy"
-            >
-            <figcaption data-i18n="gallery.counterCaption">Warm counter service</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="assets/images/food/croquant-panini.png"
-              width="1448"
-              height="1086"
-              alt="Pressed panini with golden bread, crispy chicken, cheddar, and fries."
-              loading="lazy"
-            >
-            <figcaption data-i18n="gallery.paniniCaption">Pressed panini</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="assets/images/drinks/spritz-service.png"
-              width="1448"
-              height="1086"
-              alt="Two spritz drinks served on a dark bar with citrus garnish."
-              loading="lazy"
-            >
-            <figcaption data-i18n="gallery.drinksCaption">Drinks rhythm</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section page-section" id="contact" aria-labelledby="contact-title">
-      <div class="section-inner contact-section__grid">
-        <div class="section-heading">
-          <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
-          <h2 id="contact-title" data-i18n="contact.title">Opening details are being finalized.</h2>
-          <p data-i18n="contact.body">
-            The public service details will be added here when the location,
-            reservations, and social channels are confirmed.
-          </p>
-        </div>
-
-        <div class="contact-panel" aria-label="Current service details">
-          <dl>
-            <div>
-              <dt data-i18n="contact.locationLabel">Location</dt>
-              <dd data-i18n="contact.toBeAnnounced">To be announced</dd>
+        <div class="contact-grid">
+          <article class="contact-card contact-card--instagram contact-card--interactive">
+            <div class="instagram-profile-preview">
+              <div class="instagram-profile-preview__topline">
+                <span class="instagram-profile-preview__label">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle class="instagram-profile-preview__icon-dot" cx="17.4" cy="6.7" r="1"></circle>
+                  </svg>
+                  <span data-i18n="contact.instagramLabel">Instagram</span>
+                </span>
+                <span class="instagram-profile-preview__more" aria-hidden="true">•••</span>
+              </div>
+              <div class="instagram-profile-preview__main">
+                <span class="instagram-profile-preview__avatar" aria-hidden="true">
+                  <img src="assets/images/logo/atelier-wordmark.svg" width="412" height="198" alt="">
+                </span>
+                <div class="instagram-profile-preview__identity">
+                  <h3 data-i18n="contact.instagramTitle">@atelier_crafted_eats</h3>
+                  <strong>ATELIER_crafted_eats</strong>
+                  <span data-i18n="contact.instagramCategory">Food &amp; drink</span>
+                  <span class="instagram-profile-preview__status" data-i18n="contact.instagramStatus">No posts yet</span>
+                </div>
+              </div>
+              <span class="instagram-profile-preview__button" data-i18n="contact.instagramCta">View profile</span>
             </div>
-            <div>
-              <dt data-i18n="contact.hoursLabel">Hours</dt>
-              <dd data-i18n="contact.toBeAnnounced">To be announced</dd>
+            <a
+              class="contact-card__hit-area"
+              href="https://www.instagram.com/atelier_crafted_eats/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open @atelier_crafted_eats on Instagram"
+              data-i18n-aria-label="contact.instagramAriaLabel"
+            ></a>
+          </article>
+
+          <article class="contact-card contact-card--map contact-card--interactive">
+            <div class="map-preview">
+              <iframe
+                src="https://www.google.com/maps?q=36.746167,26.971178&amp;z=16&amp;output=embed"
+                title="ATELIER location map preview"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                tabindex="-1"
+                aria-hidden="true"
+              ></iframe>
+              <span class="map-preview__shade" aria-hidden="true"></span>
+              <span class="map-preview__label" data-i18n="contact.mapsPreviewLabel">Location preview</span>
             </div>
-            <div>
-              <dt data-i18n="contact.reservationsLabel">Reservations</dt>
-              <dd data-i18n="contact.comingSoon">Coming soon</dd>
+            <div class="map-preview__body">
+              <p class="section-kicker" data-i18n="contact.mapsLabel">Google Maps</p>
+              <h3 data-i18n="contact.mapsTitle">ATELIER location</h3>
+              <span class="map-preview__cta" data-i18n="contact.mapsCta">Open in Google Maps</span>
             </div>
-            <div>
-              <dt data-i18n="contact.socialLabel">Social</dt>
-              <dd data-i18n="contact.comingSoon">Coming soon</dd>
-            </div>
-          </dl>
+            <a
+              class="contact-card__hit-area"
+              href="https://maps.app.goo.gl/XwqwWNbAuyD5F9Vy6"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open ATELIER location in Google Maps"
+              data-i18n-aria-label="contact.mapsAriaLabel"
+            ></a>
+          </article>
         </div>
       </div>
     </section>
@@ -285,8 +278,28 @@
 
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <p>ATELIER</p>
-      <p data-i18n="footer.note">Premium burgers, panini, desserts, and drinks.</p>
+      <img
+        class="site-footer__logo"
+        src="assets/images/logo/atelier-wordmark.svg"
+        width="412"
+        height="198"
+        alt="ATELIER Crafted Eats"
+        loading="lazy"
+      >
+    </div>
+    <div
+      class="site-footer__legal"
+      aria-label="Legal and service information"
+      data-i18n-aria-label="legal.label"
+    >
+      <div class="section-inner site-footer__legal-grid">
+        <p>
+          <strong data-i18n="legal.marketRegulationManagerLabel">Market Regulation Officer:</strong>
+          <span data-i18n="legal.marketRegulationManagerValue">EMMANOUIL PAPALIS</span>
+        </p>
+        <p data-i18n="legal.vatNotice">All prices include VAT.</p>
+        <p data-i18n="legal.allergyNotice">Please inform us about any allergies or intolerances before ordering.</p>
+      </div>
     </div>
   </footer>
 </body>

@@ -20,8 +20,9 @@ These rules apply to all future Codex work in this repository.
 - Use semantic HTML sections and keep the document easy to review.
 - `assets/css/style.css` is the single stylesheet for now.
 - `assets/js/main.js` should contain only minimal UI interactions.
-- Menu content may live in static JSON under `assets/content` and be rendered with minimal vanilla JavaScript.
-- Bilingual EN/EL support may use small static translation maps and localStorage.
+- Menu content lives in static JSON under `assets/content` and is rendered with minimal vanilla JavaScript.
+- Bilingual EN/EL site copy lives in `assets/content/site.en.json` and `assets/content/site.el.json`.
+- Bilingual EN/EL support may use native ES modules and localStorage.
 - Do not expand this into JavaScript component rendering, framework architecture, or broad JSON-rendered page content without explicit approval.
 - Keep imagery organized under `assets/images/logo`, `assets/images/food`, `assets/images/drinks`, and `assets/images/atmosphere`.
 
@@ -37,6 +38,7 @@ These rules apply to all future Codex work in this repository.
 
 - Public content is static in `index.html`.
 - Menu items and prices are structured content in `assets/content/menu.en.json` and `assets/content/menu.el.json`.
+- Site copy and UI labels are structured content in `assets/content/site.en.json` and `assets/content/site.el.json`.
 - Do not invent real address, hours, phone, reservation, or social details.
 - Treat menu categories as content unless behavior explicitly requires JavaScript.
 - Keep copy aligned with the ATELIER direction: premium, clean, elegant, food-focused, and modern.
