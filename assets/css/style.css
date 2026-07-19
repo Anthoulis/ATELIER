@@ -5,18 +5,15 @@
 
 :root {
   --color-ink: #161411;
-  --color-ink-soft: #2a2824;
   --color-page: #f4f0e8;
   --color-surface: #fffdf8;
-  --color-surface-muted: #ece6da;
   --color-line: #d7cdbc;
   --color-muted: #6c6459;
   --color-accent: #8d5f25;
-  --color-olive: #586346;
   --color-brass: #c09752;
   --color-white: #ffffff;
 
-  --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-display: Georgia, "Times New Roman", serif;
 
   --radius-sm: 4px;
@@ -61,14 +58,8 @@ img {
   height: auto;
 }
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
-}
-
 button {
+  font: inherit;
   cursor: pointer;
 }
 
@@ -81,18 +72,13 @@ a {
 h1,
 h2,
 h3,
-h4,
-p,
-figure,
-dl,
-dd {
+p {
   margin: 0;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   line-height: 1.08;
 }
 
@@ -436,9 +422,6 @@ body.nav-open .language-toggle__button[aria-pressed="true"],
 .signature-card__media-frame {
   width: 100%;
   aspect-ratio: 4 / 3;
-}
-
-.signature-card__media-frame {
   position: relative;
   overflow: hidden;
 }
@@ -555,12 +538,6 @@ body.nav-open .language-toggle__button[aria-pressed="true"],
   font-weight: 700;
 }
 
-.menu-section .section-heading p:last-child,
-.menu-group__heading p,
-.menu-item p {
-  color: var(--color-muted);
-}
-
 .menu-layout {
   margin-top: 36px;
 }
@@ -601,10 +578,6 @@ body.nav-open .language-toggle__button[aria-pressed="true"],
 
 .menu-category-nav a:focus-visible {
   outline-offset: 2px;
-}
-
-.menu-group {
-  scroll-margin-top: 52px;
 }
 
 .menu-group + .menu-group {
@@ -677,25 +650,6 @@ body.nav-open .language-toggle__button[aria-pressed="true"],
   white-space: nowrap;
 }
 
-.menu-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 9px;
-}
-
-.menu-tag {
-  border: 0;
-  border-radius: 0;
-  color: var(--color-accent);
-  padding: 0;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.menu-item__note,
 .menu-status {
   color: var(--color-muted);
   font-size: 14px;
@@ -1173,10 +1127,6 @@ body.nav-open .language-toggle__button[aria-pressed="true"],
 
   .signature-card--featured .signature-card__media-frame {
     min-height: 440px;
-  }
-
-  .contact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .contact-card {

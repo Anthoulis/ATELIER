@@ -27,12 +27,13 @@ Each item uses:
   "id": "atelier-burger",
   "name": "Atelier",
   "description": "Double smashed beef, caramelized onions, truffle Graviera, rocket, fig jam.",
-  "price": 13.5,
-  "tags": ["signature"]
+  "price": 14
 }
 ```
 
-`description` must always exist. Use an empty string when there is no useful description.
+`description` is optional for both categories and items. Omit it when there is no useful description. When present, it must be a string.
+
+Keep menu items limited to `id`, `name`, optional `description`, and `price`. Tags and notes are not part of the menu schema.
 
 ## IDs
 
@@ -45,16 +46,6 @@ Each item uses:
 - Store prices as numbers, not strings.
 - Do not include the euro symbol in JSON.
 - The renderer formats prices as `€5`, `€5.5`, and `€13.5`.
-
-## Tags
-
-Allowed tags:
-
-- `signature`
-- `vegetarian`
-- `spicy`
-
-Do not add new tags without updating the renderer, site translations, and validation script.
 
 ## Site Copy
 
@@ -72,7 +63,8 @@ Keep the key structure aligned. If a Greek key is missing, the page falls back t
 - Adding an item to one language only.
 - Changing an ID in one language only.
 - Storing prices as strings.
-- Adding a tag outside the allowed set.
+- Keeping an empty `description` instead of omitting it.
+- Adding unsupported item fields such as tags or notes.
 - Adding fake address, phone, hours, reservation, social, or legal data.
 - Editing visible HTML copy but forgetting the site JSON files.
 

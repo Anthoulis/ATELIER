@@ -1,8 +1,8 @@
-import { getNestedValue, readStoredValue, writeStoredValue } from "./dom-utils.js?v=20260718-2";
+import { getNestedValue, readStoredValue, writeStoredValue } from "./dom-utils.js?v=20260719-1";
 
 export const DEFAULT_LANGUAGE = "en";
-export const SUPPORTED_LANGUAGES = ["en", "el"];
-export const LANGUAGE_STORAGE_KEY = "atelier-language";
+const SUPPORTED_LANGUAGES = ["en", "el"];
+const LANGUAGE_STORAGE_KEY = "atelier-language";
 
 const siteContentCache = new Map();
 
@@ -31,8 +31,7 @@ export async function loadSiteContent(language) {
     return {
       content: fallbackContent,
       fallbackContent,
-      language: DEFAULT_LANGUAGE,
-      requestedLanguage
+      language: DEFAULT_LANGUAGE
     };
   }
 
@@ -40,15 +39,13 @@ export async function loadSiteContent(language) {
     return {
       content: await fetchSiteContent(requestedLanguage),
       fallbackContent,
-      language: requestedLanguage,
-      requestedLanguage
+      language: requestedLanguage
     };
-  } catch (error) {
+  } catch {
     return {
       content: fallbackContent,
       fallbackContent,
-      language: DEFAULT_LANGUAGE,
-      requestedLanguage
+      language: DEFAULT_LANGUAGE
     };
   }
 }
@@ -66,7 +63,6 @@ export function getTranslation(siteContent, key) {
 
 export function applyStaticTranslations(siteContent, languageButtons) {
   document.documentElement.lang = siteContent.language;
-  document.documentElement.dataset.language = siteContent.language;
   const metaNamespace = document.documentElement.dataset.metaNamespace || "meta";
 
   document.querySelectorAll("[data-i18n]").forEach(function (element) {
@@ -108,7 +104,7 @@ async function fetchSiteContent(language) {
     return siteContentCache.get(language);
   }
 
-  const response = await fetch(`assets/content/site.${language}.json`);
+  const response = await fetch(`assets/content/site.${language}.json?v=20260719-1`);
 
   if (!response.ok) {
     throw new Error(`Site content request failed: ${response.status}`);

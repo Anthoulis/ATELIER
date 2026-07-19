@@ -19,7 +19,8 @@ SITE_FILES = {
     "en": ROOT / "assets" / "content" / "site.en.json",
     "el": ROOT / "assets" / "content" / "site.el.json",
 }
-ALLOWED_TAGS = {"signature", "vegetarian", "spicy"}
+ALLOWED_CATEGORY_KEYS = {"id", "title", "description", "items"}
+ALLOWED_ITEM_KEYS = {"id", "name", "description", "price"}
 ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
@@ -100,10 +101,14 @@ def validate_menus(menus: dict[str, Any], errors: list[str]) -> None:
             seen_category_ids.add(category_id)
             category_ids.append(category_id)
 
+            unsupported_keys = sorted(set(category).difference(ALLOWED_CATEGORY_KEYS))
+            for key in unsupported_keys:
+                errors.append(f"{path_label} category {category_id} has unsupported field: {key}.")
+
             if not isinstance(category.get("title"), str) or not category["title"].strip():
                 errors.append(f"{path_label} category {category_id} needs a non-empty title.")
 
-            if not isinstance(category.get("description"), str):
+            if "description" in category and not isinstance(category["description"], str):
                 errors.append(f"{path_label} category {category_id} description must be a string.")
 
             items = category.get("items")
@@ -128,7 +133,7 @@ def validate_menus(menus: dict[str, Any], errors: list[str]) -> None:
                 seen_item_ids.add(item_id)
                 item_ids.append(item_id)
 
-                validate_menu_item(path_label, category_id, item, errors)
+                validate_menu_item(path_label, item, errors)
 
             item_orders[language][category_id] = item_ids
 
@@ -143,17 +148,21 @@ def validate_menus(menus: dict[str, Any], errors: list[str]) -> None:
             errors.append(f"EN and EL item ID order differs in category {category_id}.")
 
 
-def validate_menu_item(path_label: str, category_id: str, item: dict[str, Any], errors: list[str]) -> None:
+def validate_menu_item(path_label: str, item: dict[str, Any], errors: list[str]) -> None:
     item_id = item["id"]
 
-    for required_key in ("id", "name", "description", "price"):
+    unsupported_keys = sorted(set(item).difference(ALLOWED_ITEM_KEYS))
+    for key in unsupported_keys:
+        errors.append(f"{path_label} item {item_id} has unsupported field: {key}.")
+
+    for required_key in ("id", "name", "price"):
         if required_key not in item:
             errors.append(f"{path_label} item {item_id} is missing {required_key}.")
 
     if not isinstance(item.get("name"), str) or not item["name"].strip():
         errors.append(f"{path_label} item {item_id} needs a non-empty name.")
 
-    if not isinstance(item.get("description"), str):
+    if "description" in item and not isinstance(item["description"], str):
         errors.append(f"{path_label} item {item_id} description must be a string.")
 
     price = item.get("price")
@@ -162,22 +171,9 @@ def validate_menu_item(path_label: str, category_id: str, item: dict[str, Any], 
     elif price < 0:
         errors.append(f"{path_label} item {item_id} price must be >= 0.")
 
-    tags = item.get("tags")
-    if tags is not None:
-        if not isinstance(tags, list):
-            errors.append(f"{path_label} item {item_id} tags must be an array.")
-        else:
-            for tag in tags:
-                if tag not in ALLOWED_TAGS:
-                    errors.append(f"{path_label} item {item_id} has unsupported tag: {tag!r}.")
-
-    note = item.get("note")
-    if note is not None and not isinstance(note, str):
-        errors.append(f"{path_label} item {item_id} note must be a string.")
-
 
 def validate_sites(sites: dict[str, Any], errors: list[str], warnings: list[str]) -> None:
-    required_roots = {"meta", "nav", "navToggle", "menu", "contact", "footer", "legal"}
+    required_roots = {"meta", "nav", "navToggle", "menu", "contact", "legal"}
 
     for language, site in sites.items():
         path_label = f"site.{language}.json"
@@ -189,14 +185,6 @@ def validate_sites(sites: dict[str, Any], errors: list[str], warnings: list[str]
         for key in required_roots:
             if not isinstance(site.get(key), dict):
                 errors.append(f"{path_label} must contain object root key: {key}.")
-
-        tag_labels = site.get("menu", {}).get("tags")
-        if not isinstance(tag_labels, dict):
-            errors.append(f"{path_label} must contain menu.tags labels.")
-        else:
-            missing_tags = sorted(ALLOWED_TAGS.difference(tag_labels.keys()))
-            if missing_tags:
-                errors.append(f"{path_label} is missing menu tag labels: {', '.join(missing_tags)}.")
 
     en_keys = flatten_keys(sites.get("en", {}))
     el_keys = flatten_keys(sites.get("el", {}))
