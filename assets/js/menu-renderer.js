@@ -1,5 +1,5 @@
-import { DEFAULT_LANGUAGE, getTranslation, normalizeLanguage } from "./i18n.js?v=20260718-2";
-import { createElement } from "./dom-utils.js?v=20260718-2";
+import { DEFAULT_LANGUAGE, getTranslation, normalizeLanguage } from "./i18n.js?v=20260719-1";
+import { createElement } from "./dom-utils.js?v=20260719-1";
 
 const menuContentCache = new Map();
 let menuRenderRequestId = 0;
@@ -23,7 +23,7 @@ export async function renderMenuForLanguage(language, siteContent, targets) {
     clearMenuStatus(targets.statusElement);
     targets.menuRoot.lang = menuContent.language;
     renderMenu(targets.menuRoot, menuContent.menu, siteContent);
-  } catch (error) {
+  } catch {
     // A stale failure must not clear a newer successful menu render.
     if (requestId !== menuRenderRequestId) {
       return;
@@ -43,7 +43,7 @@ async function getMenuContent(language) {
       language: requestedLanguage,
       menu: await fetchMenuContent(requestedLanguage)
     };
-  } catch (error) {
+  } catch {
     if (requestedLanguage !== DEFAULT_LANGUAGE) {
       return {
         language: DEFAULT_LANGUAGE,
@@ -60,7 +60,7 @@ async function fetchMenuContent(language) {
     return menuContentCache.get(language);
   }
 
-  const response = await fetch(`assets/content/menu.${language}.json`);
+  const response = await fetch(`assets/content/menu.${language}.json?v=20260719-1`);
 
   if (!response.ok) {
     throw new Error(`Menu request failed: ${response.status}`);
@@ -83,7 +83,7 @@ function renderMenu(menuRoot, menu, siteContent) {
   fragment.appendChild(renderCategoryNavigation(menu.categories, siteContent));
 
   menu.categories.forEach(function (category) {
-    fragment.appendChild(renderCategory(category, siteContent));
+    fragment.appendChild(renderCategory(category));
   });
 
   menuRoot.replaceChildren(fragment);
@@ -105,7 +105,7 @@ function renderCategoryNavigation(categories, siteContent) {
   return navigation;
 }
 
-function renderCategory(category, siteContent) {
+function renderCategory(category) {
   const categoryTitleId = `menu-category-${category.id}`;
   const section = createElement("section", "menu-group");
   section.setAttribute("aria-labelledby", categoryTitleId);
@@ -122,14 +122,14 @@ function renderCategory(category, siteContent) {
   const list = createElement("div", "menu-list");
 
   category.items.forEach(function (item) {
-    list.appendChild(renderMenuItem(item, siteContent));
+    list.appendChild(renderMenuItem(item));
   });
 
   section.append(heading, list);
   return section;
 }
 
-function renderMenuItem(item, siteContent) {
+function renderMenuItem(item) {
   const article = createElement("article", "menu-item");
   const content = createElement("div", "menu-item__content");
   content.appendChild(createElement("h3", null, item.name));
@@ -138,33 +138,10 @@ function renderMenuItem(item, siteContent) {
     content.appendChild(createElement("p", null, item.description));
   }
 
-  if (Array.isArray(item.tags) && item.tags.length > 0) {
-    content.appendChild(renderTags(item.tags, siteContent));
-  }
-
-  if (item.note) {
-    content.appendChild(createElement("p", "menu-item__note", item.note));
-  }
-
   const price = createElement("span", "menu-item__price", formatPrice(item.price));
 
   article.append(content, price);
   return article;
-}
-
-function renderTags(tags, siteContent) {
-  const tagList = createElement("div", "menu-tags");
-  tagList.setAttribute(
-    "aria-label",
-    getTranslation(siteContent, "menu.tagsLabel") || "Item tags"
-  );
-
-  tags.forEach(function (tag) {
-    const label = getTranslation(siteContent, `menu.tags.${tag}`) || tag;
-    tagList.appendChild(createElement("span", "menu-tag", label));
-  });
-
-  return tagList;
 }
 
 function formatPrice(price) {

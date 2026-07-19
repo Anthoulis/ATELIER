@@ -66,14 +66,7 @@
     "title": "Μενού",
     "loading": "Φόρτωση μενού...",
     "unavailable": "Το μενού δεν είναι προσωρινά διαθέσιμο.",
-    "tagsLabel": "Ετικέτες πιάτου",
-    "categoryNavLabel": "Κατηγορίες μενού",
-    "allCategoriesLabel": "Όλες οι κατηγορίες",
-    "tags": {
-      "signature": "Πρόταση",
-      "vegetarian": "Χορτοφαγικό",
-      "spicy": "Πικάντικο"
-    }
+    "categoryNavLabel": "Κατηγορίες μενού"
   },
   "contact": {
     "kicker": "Επικοινωνία",
@@ -89,7 +82,6 @@
     "mapsCta": "Άνοιγμα στο Google Maps",
     "mapsAriaLabel": "Άνοιγμα τοποθεσίας ATELIER στο Google Maps"
   },
-  "footer": {},
   "legal": {
     "label": "Νομικές πληροφορίες και πληροφορίες εξυπηρέτησης",
     "marketRegulationManagerLabel": "Αγορανομικός Υπεύθυνος:",

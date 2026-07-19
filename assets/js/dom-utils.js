@@ -27,7 +27,7 @@ export function getNestedValue(source, key) {
 export function readStoredValue(key) {
   try {
     return window.localStorage ? window.localStorage.getItem(key) : null;
-  } catch (error) {
+  } catch {
     return null;
   }
 }
@@ -37,7 +37,7 @@ export function writeStoredValue(key, value) {
     if (window.localStorage) {
       window.localStorage.setItem(key, value);
     }
-  } catch (error) {
+  } catch {
     return;
   }
 }

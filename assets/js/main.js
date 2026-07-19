@@ -5,8 +5,8 @@ import {
   loadSiteContent,
   normalizeLanguage,
   storeLanguage
-} from "./i18n.js?v=20260718-2";
-import { renderMenuForLanguage } from "./menu-renderer.js?v=20260718-2";
+} from "./i18n.js?v=20260719-1";
+import { renderMenuForLanguage } from "./menu-renderer.js?v=20260719-1";
 
 const body = document.body;
 const header = document.querySelector("[data-site-header]");
@@ -28,14 +28,12 @@ async function initialize() {
   initializeMobileNavigation();
   initializeHeaderScrollState();
   initializeLanguageButtons();
+  const requestId = languageRequestId + 1;
 
   try {
     await setLanguage(activeLanguage, { persist: false });
   } catch (error) {
-    if (menuTargets.statusElement) {
-      menuTargets.statusElement.textContent = "Menu is temporarily unavailable.";
-      menuTargets.statusElement.hidden = false;
-    }
+    handleLanguageFailure(requestId, error);
   }
 }
 
@@ -85,7 +83,11 @@ function initializeHeaderScrollState() {
 function initializeLanguageButtons() {
   languageButtons.forEach(function (button) {
     button.addEventListener("click", function () {
-      setLanguage(button.dataset.languageButton);
+      const requestId = languageRequestId + 1;
+
+      setLanguage(button.dataset.languageButton).catch(function (error) {
+        handleLanguageFailure(requestId, error);
+      });
     });
   });
 }
@@ -142,4 +144,24 @@ function updateHeaderState() {
   }
 
   header.classList.toggle("is-scrolled", window.scrollY > 12);
+}
+
+function showMenuUnavailable() {
+  if (menuTargets.statusElement) {
+    const translatedMessage = activeSiteContent
+      ? getTranslation(activeSiteContent, "menu.unavailable")
+      : null;
+
+    menuTargets.statusElement.textContent =
+      translatedMessage || "Menu is temporarily unavailable.";
+    menuTargets.statusElement.hidden = false;
+  }
+}
+
+function handleLanguageFailure(requestId, error) {
+  // A failed, superseded request must not overwrite newer language state.
+  if (requestId === languageRequestId) {
+    console.error("Language update failed.", error);
+    showMenuUnavailable();
+  }
 }

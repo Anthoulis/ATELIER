@@ -3,18 +3,15 @@
     {
       "id": "starters",
       "title": "Starters",
-      "description": "",
       "items": [
         {
           "id": "fresh-cut-fries-spicy-bacon",
           "name": "Fresh-Cut Fries with Spicy Smoked Bacon Sauce",
-          "description": "",
           "price": 5
         },
         {
           "id": "fresh-cut-fries-parmesan",
           "name": "Fresh-Cut Fries with Aromatic Parmesan",
-          "description": "",
           "price": 6
         },
         {
@@ -40,7 +37,6 @@
     {
       "id": "hot-dogs",
       "title": "Hot Dogs",
-      "description": "",
       "items": [
         {
           "id": "classic-pickle-hot-dog",
@@ -59,7 +55,6 @@
     {
       "id": "panini",
       "title": "Panini",
-      "description": "",
       "items": [
         {
           "id": "panini-pancetta-street-style",
@@ -139,30 +134,25 @@
     {
       "id": "desserts",
       "title": "Desserts",
-      "description": "",
       "items": [
         {
           "id": "warm-loukoumades-honey-walnut-cinnamon",
           "name": "Warm Loukoumades with Thyme Honey, Walnut & Cinnamon",
-          "description": "",
           "price": 6
         },
         {
           "id": "warm-loukoumades-praline-cream",
           "name": "Warm Loukoumades with Praline Cream",
-          "description": "",
           "price": 6
         },
         {
           "id": "ekmek-kataifi",
           "name": "Ekmek Kataifi",
-          "description": "",
           "price": 6.5
         },
         {
           "id": "caramelized-galaktoboureko-rosette",
           "name": "Caramelized Galaktoboureko Rosette",
-          "description": "",
           "price": 7
         }
       ]
@@ -170,60 +160,50 @@
     {
       "id": "refreshments",
       "title": "Refreshments",
-      "description": "",
       "items": [
         {
           "id": "coca-cola",
           "name": "Coca-Cola",
-          "description": "",
           "price": 3
         },
         {
           "id": "coca-cola-zero",
           "name": "Coca-Cola Zero",
-          "description": "",
           "price": 3
         },
         {
           "id": "sprite",
           "name": "Sprite",
-          "description": "",
           "price": 3
         },
         {
           "id": "fanta-orange",
           "name": "Fanta Orange",
-          "description": "",
           "price": 3
         },
         {
           "id": "fanta-lemon",
           "name": "Fanta Lemon",
-          "description": "",
           "price": 3
         },
         {
           "id": "iced-tea",
           "name": "Iced Tea",
-          "description": "",
           "price": 3
         },
         {
           "id": "pink-grapefruit-soda",
           "name": "Pink Grapefruit Soda",
-          "description": "",
           "price": 4
         },
         {
           "id": "tonic-water",
           "name": "Tonic Water",
-          "description": "",
           "price": 3
         },
         {
           "id": "soda-water",
           "name": "Soda Water",
-          "description": "",
           "price": 3
         }
       ]
@@ -231,18 +211,15 @@
     {
       "id": "water",
       "title": "Water",
-      "description": "",
       "items": [
         {
           "id": "still-water",
           "name": "Still Water",
-          "description": "",
           "price": 0.5
         },
         {
           "id": "sparkling-mineral-water",
           "name": "Sparkling Mineral Water",
-          "description": "",
           "price": 2.5
         }
       ]
@@ -250,30 +227,25 @@
     {
       "id": "beers",
       "title": "Beers",
-      "description": "",
       "items": [
         {
           "id": "alfa-lager",
           "name": "Alfa Lager",
-          "description": "",
           "price": 4
         },
         {
           "id": "mythos",
           "name": "Mythos",
-          "description": "",
           "price": 4
         },
         {
           "id": "stella-artois",
           "name": "Stella Artois",
-          "description": "",
           "price": 6
         },
         {
           "id": "corona-extra",
           "name": "Corona Extra",
-          "description": "",
           "price": 6
         }
       ]
@@ -281,30 +253,25 @@
     {
       "id": "spirits",
       "title": "Spirits",
-      "description": "",
       "items": [
         {
           "id": "stoli-vodka",
           "name": "Stoli Vodka",
-          "description": "",
           "price": 8
         },
         {
           "id": "tanqueray-london-dry-gin",
           "name": "Tanqueray London Dry Gin",
-          "description": "",
           "price": 8
         },
         {
           "id": "jose-cuervo-especial-silver-tequila",
           "name": "Jose Cuervo Especial Silver Tequila",
-          "description": "",
           "price": 8
         },
         {
           "id": "havana-club-7-anos-rum",
           "name": "Havana Club 7 Años Rum",
-          "description": "",
           "price": 8.5
         }
       ]
@@ -312,18 +279,15 @@
     {
       "id": "aperitif",
       "title": "Aperitifs",
-      "description": "",
       "items": [
         {
           "id": "aperol-spritz",
           "name": "Aperol Spritz",
-          "description": "",
           "price": 9
         },
         {
           "id": "campari-spritz",
           "name": "Campari Spritz",
-          "description": "",
           "price": 9
         }
       ]

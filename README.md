@@ -14,6 +14,8 @@ The project is intentionally lightweight:
 
 ```text
 index.html
+menu.html
+netlify.toml
 assets/
   content/
     menu.en.json
@@ -71,8 +73,7 @@ The language toggle loads the matching site and menu JSON files. English is the 
 - Keep category and item `id` values stable.
 - Keep English and Greek category/item ID order exactly aligned.
 - Keep prices as numbers, not strings.
-- Keep `description` present even when it is an empty string.
-- Use only these optional tags: `signature`, `vegetarian`, `spicy`.
+- Add `description` only when it provides useful information.
 - Do not invent products, prices, address details, hours, phone numbers, reservation links, or social links.
 - Keep wording concise and aligned with the premium ATELIER tone.
 
@@ -84,7 +85,7 @@ Run the content validator after editing JSON:
 python tools/validate-content.py
 ```
 
-The script checks menu structure, bilingual ID alignment, allowed tags, numeric prices, and site translation key alignment.
+The script checks menu structure, bilingual ID alignment, numeric prices, optional descriptions, and site translation key alignment.
 
 ## JavaScript
 
@@ -102,6 +103,15 @@ The scripts use native ES modules and run directly in the browser from a static 
 Deploy the repository as static files on any static host. No build command is required.
 
 The host must serve `.html`, `.css`, `.js`, `.json`, `.svg`, and image files as static assets.
+
+For Netlify, use these build settings:
+
+- Base directory: blank
+- Package directory: blank
+- Build command: blank
+- Publish directory: `.`
+
+The root `netlify.toml` records the publish directory. The production branch must contain `index.html`, `menu.html`, and `assets/` at the repository root.
 
 ## SEO Note
 
