@@ -149,7 +149,6 @@ body.nav-open .site-header {
 
 .site-header__inner,
 .section-inner,
-.site-footer__inner,
 .site-footer__legal-grid {
   width: min(100% - 32px, var(--container));
   margin-inline: auto;
@@ -936,21 +935,6 @@ body.nav-open .language-toggle__button[aria-pressed="true"],
   color: var(--color-white);
 }
 
-.site-footer__inner {
-  display: grid;
-  gap: 8px;
-  padding: 26px 0;
-}
-
-.site-footer__logo {
-  width: 128px;
-  height: auto;
-}
-
-.site-footer__legal {
-  border-top: 1px solid rgb(255 255 255 / 0.12);
-}
-
 .site-footer__legal-grid {
   display: grid;
   gap: 10px;
@@ -970,7 +954,6 @@ body.nav-open .language-toggle__button[aria-pressed="true"],
 @media (min-width: 720px) {
   .site-header__inner,
   .section-inner,
-  .site-footer__inner,
   .site-footer__legal-grid,
   .hero-section__content {
     width: min(100% - 48px, var(--container));
